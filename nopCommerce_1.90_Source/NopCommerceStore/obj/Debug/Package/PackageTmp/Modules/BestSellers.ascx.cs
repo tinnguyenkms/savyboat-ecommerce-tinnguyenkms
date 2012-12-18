@@ -50,7 +50,7 @@ namespace NopSolutions.NopCommerce.Web.Modules
             if (this.SettingManager.GetSettingValueBoolean("Display.ShowBestsellersOnMainPage"))
             {
                 int number = this.SettingManager.GetSettingValueInteger("Display.ShowBestsellersOnMainPageNumber");
-                var report = this.OrderService.BestSellersReport(1, 16, 1);
+                var report = this.OrderService.BestSellersReport(365, number, 1);
                 if (report.Count > 0)
                 {
                     List<Product> productList = new List<Product>();
@@ -100,7 +100,7 @@ namespace NopSolutions.NopCommerce.Web.Modules
                 if(product != null)
                 {
                     string productURL = SEOHelper.GetProductUrl(product);
-
+                    ProductPrice1Control ctrprice = e.Item.FindControl("ctrlProductPrice") as ProductPrice1Control;
                     var hlImageLink = e.Item.FindControl("hlImageLink") as HyperLink;
                     if(hlImageLink != null)
                     {
@@ -117,6 +117,7 @@ namespace NopSolutions.NopCommerce.Web.Modules
                         hlImageLink.NavigateUrl = productURL;
                         hlImageLink.ToolTip = String.Format(GetLocaleResourceString("Media.Product.ImageLinkTitleFormat"), product.LocalizedName);
                         hlImageLink.Text = String.Format(GetLocaleResourceString("Media.Product.ImageAlternateTextFormat"), product.LocalizedName);
+                        ctrprice.ProductVariantId = product.ProductVariants[0].ProductVariantId;
                     }
 
                     var hlProduct = e.Item.FindControl("hlProduct") as HyperLink;
