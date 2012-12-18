@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Library.DTO.User" table="Users" lazy="true" >
+    <id name="Id" column="Id" type="Guid">
+      <generator class="guid" />      
+    </id>
+    <property name="Name">
+      <column name="name" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Password">
+      <column name="password" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="DefaultPassword">
+      <column name="DefaultPassword" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="Email">
+      <column name="email" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="Group">
+      <column name="group_id" sql-type="int" not-null="false" />
+    </property>
+    <property name="DateCreated">
+      <column name="datecreated" sql-type="datetime" not-null="false" />
+    </property>
+    <property name="DateLogged">
+      <column name="datelogged" sql-type="datetime" not-null="false" />
+    </property>
+    <property name="IsVisible">
+      <column name="isvisible" sql-type="bit" not-null="false" />
+    </property>
+    <property name="Address1">
+      <column name="Address1" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="Address2">
+      <column name="Address2" sql-type="ntext" not-null="false" />
+    </property>   
+    <property name="LastName">
+      <column name="LastName" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="FirstName">
+      <column name="FirstName" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="CityName">
+      <column name="CityName" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="CountryName">
+      <column name="CountryName" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="ZipCode">
+      <column name="ZipCode" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="Status">
+      <column name="Status" sql-type="int" not-null="false" />
+    </property>
+    <property name="CompanyName">
+      <column name="CompanyName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="BusinessType">
+      <column name="BusinessType" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="BusinessField">
+      <column name="BusinessField" sql-type="nvarchar" not-null="false" />
+    </property>   
+    <property name="Tel">
+      <column name="Tel" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Fax">
+      <column name="Fax" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="ContactPerson">
+      <column name="ContactPerson" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="HandPhone">
+      <column name="HandPhone" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Contractor">
+      <column name="Contractor" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="SubContractor">
+      <column name="SubContractor" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="PersionalWebsite">
+      <column name="PersionalWebsite" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Content">
+      <column name="Content" sql-type="nvarchar" not-null="false" />
+    </property>
+    
+  </class>
+</hibernate-mapping>

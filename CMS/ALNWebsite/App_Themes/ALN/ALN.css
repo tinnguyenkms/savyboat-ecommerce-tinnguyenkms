@@ -1,0 +1,548 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+body   
+{
+    font-size: 12px;
+    font-family:Arial;
+    margin: 0px;
+    padding: 0px;
+    color:Black;    
+   
+    
+    /*background-color:#f3f3f5;*/
+}
+a{text-decoration:none; color:#444;}
+a:hover{text-decoration:none;}
+.tilelable
+{
+    font-weight:bold;
+}
+.Main
+{    
+	width:1024px;
+	min-height:800px;
+	-moz-box-shadow: 0px 5px 20px #555555;
+    -webkit-box-shadow: 0px 5px 20x #555555;
+    box-shadow: 0px 5px 20px #555555;
+    background-color:white;
+    margin:0px;
+    padding:0px;
+}
+.Copyright{
+	height:50px;
+	text-align:center;
+	padding-top:10px;
+	color:white;
+	text-shadow:1px 1px 3px #000;
+}
+.Footer
+{
+    background-image: url('Images/footer_bg.jpg');   
+    background-repeat:repeat-x;
+    height:100px;
+    width:100%;
+}
+.Footer .left
+{
+    float:left;
+    width:50%;
+}
+.Footer .right
+{
+    float:right;
+    text-align:left;
+ 
+}
+.Home
+{
+    height:500px;
+    width:100%;
+}
+.Home .right
+{
+     float:right;
+    text-align:left;
+       word-wrap: break-word;
+     width:50%;
+      border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    border: 1px solid #800000;
+}
+.Home .left
+{
+     float:left;
+    width:49%;
+     border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    border: 1px solid #800000;
+}
+
+.Box
+{
+    width:100%;
+   
+}
+
+.Box .Backgroudtitle
+{
+    background-image: url('Images/nav_bg.jpg');   
+    background-repeat:repeat-x;    
+    height:27px;
+    color:White;
+    padding-left:10px;
+       -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+    
+}
+.Box .Backgroundbox
+{    
+    background-color:#F2F2F2;
+}
+#Box span
+{
+    vertical-align:middle;
+}
+/* ---- Menu verticle ----*/
+.glossymenu, .glossymenu li ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 180px; /*WIDTH OF MAIN MENU ITEMS*/
+border: 1px solid black;
+}
+
+.glossymenu li{
+position: relative;
+}
+
+.glossymenu li a{
+background: white url('Images/glossyback.gif') repeat-x bottom left;
+font: bold 12px Verdana, Helvetica, sans-serif;
+color:Black;
+display: block;
+width: auto;
+padding: 5px 0;
+padding-left: 10px;
+text-decoration: none;
+}
+
+.glossymenu li ul{ /*SUB MENU STYLE*/
+position: absolute;
+width: 200px; /*WIDTH OF SUB MENU ITEMS*/
+left: 0;
+top: 0;
+display: none;
+}
+
+.glossymenu li ul li{
+float: left;
+}
+
+.glossymenu li ul a{
+width: 180px; /*WIDTH OF SUB MENU ITEMS - 10px padding-left for A elements */
+}
+
+.glossymenu .arrowdiv{
+position: absolute;
+right: 2px;
+background: transparent url('Images/arrow.gif') no-repeat center right;
+}
+
+.glossymenu li a:visited, .glossymenu li a:active{
+color: white;
+}
+
+.glossymenu li a:hover{
+background-image: url('Images/glossyback2.gif');
+}
+
+/* Holly Hack for IE \*/
+* html .glossymenu li { float: left; height: 1%; }
+* html .glossymenu li a { height: 1%; }
+/* End */
+.SearchControl
+{
+    background-image: url('Images/message_search.jpg');   
+    height:27px;
+    width:278px;
+}
+.TimeandSearchControl
+{
+    background-image: url('Images/message_bg.jpg');   
+    height:30px;
+    width:100%;
+}
+#MenuHorzi
+{    
+    position:static;
+    float:left;
+    border:1px solid #686;
+    width:100%;        
+    text-align:left;
+    height:27px;
+    background-image: url('Images/nav_bg.jpg');   
+    vertical-align:middle;
+    
+}
+#MenuHorzi ul
+{
+    float:left;
+    list-style:none;    
+    padding-left:10px;
+    display:inline;
+    padding-bottom:15px;
+}
+#MenuHorzi ul li
+{
+    position:relative;
+    float:left;
+}
+#MenuHorzi li a
+{
+    display:block;
+    font-weight:bold;
+    padding: .3em 5px;
+    text-decoration:none;
+    color:White;
+}
+#MenuHorzi li a:hover
+{
+    color:White;   
+    background-color:Orange;
+}
+#MenuHorzi li ul
+{
+    position:absolute;
+    display:none;
+    width:10em;
+    
+}
+#MenuHorzi li:hover ul
+{
+    display:block;    
+}
+#MenuHorzi ul li ul li
+{
+    background-image: url('Images/nav_bg.jpg');   
+    background-repeat:repeat-x;    
+    border: 1px solid #686;
+    width:100%;    
+}
+
+#MenuVertical
+{            
+    border:1px solid #686;
+    width:100%;        
+    text-align:left;    
+    background-color:#F2F2F2;
+    vertical-align:top;    
+    float:left;
+}
+#MenuVertical ul
+{    
+    float:left;
+    list-style:none;        
+}
+#MenuVertical ul li
+{
+    float:none;
+    border:1px solid white;
+    width:100%;
+}
+#MenuVertical li a
+{
+    display:block;
+    font-weight:bold;
+    padding: .2em 1px;
+    text-decoration:none;
+    color:Black;
+}
+#MenuVertical li a:hover
+{    
+    color:White;   
+    background-color:Orange;
+}
+#MenuVertical li ul
+{
+    position:absolute;
+    display:none;
+    width:10em;
+    padding-left:150px;
+    background-color:#F2F2F2;
+}
+#MenuVertical li:hover ul
+{
+    display:block;    
+}
+.White
+{
+    margin-left:6px;
+    margin-right:6px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.Register
+{
+    width:100%;
+}
+.Register .ColRight
+{
+    float:right;        
+    margin:0px;
+    margin-bottom:5px;
+    text-align:left;
+    
+}
+.Register .ColLeft
+{
+    float:left;
+    width:23%;        
+}
+.Register .ColLeftd
+{
+    float:left;
+    width:40%; 
+    padding-left:10px;
+    margin-bottom:-20px;
+}
+.Register .ColLeftd ul
+{
+    font-size:11px;
+}
+.ProductItem
+{
+	-moz-transition: all 1s ease 0s;
+	width:150px;
+	-moz-border-radius: 5px;
+	float:left;
+	padding:5px;
+}
+.ProductItem:hover	
+{
+				background-color: #EFEFEF;
+				-moz-border-radius: 5px;
+				-moz-box-shadow: 0px 0px 15px #888888;
+				-webkit-box-shadow: 0px 0px 15x #888888;
+				box-shadow: 0px 0px 15px #888888;				
+}
+/* Productlist */
+.ProductImage
+{
+	-moz-border-radius: 5px;
+	height:80px !important;
+	border-color:#E0E0E0;
+    border-width:1px;
+    border-style:solid;
+}
+.ProductName{
+	color:black;
+	font-size:12px;
+	font-weight:bold;			
+}
+.ProductCost
+{
+	color:red;
+	font-size:12px;
+	font-weight:bold;				
+}
+.bigBlockContent
+{
+    width: auto;
+    background: #fff;   
+    height: auto;     
+    min-height: 100%;   
+}
+
+.bigBlockContent .topContent
+{
+    width: 100%;    
+    height: 45px;
+    position: relative;
+}
+
+.bigBlockContent .topContent .midTop
+{
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0 0 15px;
+    top: 0px;
+    left: 0px;
+    position: absolute;    
+    
+}
+
+.bigBlockContent .topContent .midTop a
+{
+    color: #fff;   
+}
+
+.bigBlockContent .topContent .midTop a:hover
+{
+    color: #ffffcc;   
+}
+
+.bigBlockContent .topContent a.current
+{
+    color: #ffffcc;  
+}
+
+.bigBlockContent .midContent
+{
+    width: 100%;    
+    height: 100%;
+    position: relative;
+}
+.bigBlockContent .midContent .leftMid
+{
+    width: 6px;
+    height: 100%;    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bigBlockContent .midContent .rightMid
+{
+    width: 6px;
+    height: 100%;    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bigBlockContent .midContent .contentMidBlock
+{
+    width: auto;    
+    height: 100%;   
+    margin: 0 10px 0 9px; 
+}
+
+.bigBlockContent .bottomContent
+{
+    width: 100%;    
+    height: 10px;
+    position: relative;
+}
+.bigBlockContent .bottomContent .leftBottom
+{
+    width: 6px;
+    height: 10px;    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bigBlockContent .bottomContent .rightBottom
+{
+    width: 6px;
+    height: 10px;    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ .titlepost
+{
+    font-size:20px;
+    font-weight:bold;
+}
+.NewsIcon
+{
+    background-image: url('Images/newsIcon.gif');   
+    width:35px;
+    height:15px;
+}
+.Loginpage
+{    
+    width:100%;
+    
+    margin-left:15px;
+}
+.Loginpage .row
+{
+    margin-top: 5px;  
+    margin-right: 25px;
+    width: 100%; 
+}
+
+.Loginpage .row .leftRow
+{
+    float: left;
+    width: 30%;    
+    text-align: right;   
+    
+}
+.Loginpage .row .rightRow
+{
+    float: left;        
+    width: auto;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+.Loginpage .tilte
+{
+    font-weight:bold;
+}
+.Loginpage .headertitle
+{
+    font-size:18px;
+    color:Red;    
+    font-weight:bold;
+
+}
+.Borderradius
+{
+    border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    border: 1px solid #800000;
+    word-wrap:break-word;
+}
+.titlehome
+{
+    border-radius: 10px 10px 0px 0px; 
+    -moz-border-radius: 10px 10px 0px 0px; 
+    -webkit-border-radius: 10px 10px 0px 0px; 
+    border: 1px solid #800505;
+    width:200px;
+    padding-left:10px;
+    background-image: url('Images/nav_bg.jpg');   
+    background-repeat:repeat-x;    
+    height:27px;
+   color:White;
+   font-weight:bold;
+   font-size:18px;
+   margin-left:-7px;
+}
+.titleContent
+{
+    border-radius: 0px 0px 0px 0px; 
+-moz-border-radius: 0px 0px 0px 0px; 
+-webkit-border-radius: 0px 0px 0px 0px; 
+border: 1px solid #800505;
+width:100%;padding-left:1px;
+height:200px;
+margin-left:-7px;
+
+}
+  #container {
+            text-align: center;
+            position: absolute;                  
+         
+        }
+        .img {
+            position: fixed;
+            z-index: 0;
+        }
+        .end {
+            margin-right: 0;
+        }
+        .clear {
+            clear: both;
+        }
+        .img a img {
+            position: relative;
+            border: 0 solid #fff;
+        }

@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ALNWebsite.Management.Master.Admin" %>
+<%@ Register Src="~/Management/Control/MenuBar.ascx" TagName="MenuBar" TagPrefix="uc" %>
+<%@ Register Src="~/Management/Control/MenuAdmin.ascx" TagPrefix="uc" TagName="Menu" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../App_Themes/ALN/admin.css" rel="stylesheet" type="text/css" />
+  
+    <style type="text/css">
+        .style1
+        {
+            color: #FFFFFF;
+        }
+    </style>
+  
+</head>
+<body class="body">
+    <form id="form1" runat="server">
+   
+     <telerik:RadCodeBlock ID="RadCodeBlock1" runat="server">
+ <script type="text/javascript">
+     function OnClientLoad(editor, args) {
+         editor.add_submit(function () {
+             editor.fire("SelectAll");
+             editor.fire("FormatStripper", { value: "WORD" });
+             alert(editor.get_html());
+         });
+     }
+</script>
+</telerik:RadCodeBlock>
+
+    <asp:ScriptManager id="ScriptManager1" runat="server" />
+    <div class="wrapper">
+     <uc:MenuBar ID="MenuBar" runat="server" />
+        <div class="header">
+             <h1 class="style1"> Website Management</h1>
+        </div>
+        <div>
+            <div class="leftcolumn">
+                <uc:Menu ID="menu" runat="server" />
+            </div>
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ConfigWed" table="ConfigWed" lazy="true" >
+    <id name="Id" column="Id" type="Guid" >
+      <generator class="guid" />      
+    </id>   
+    <component name="Title" class="ClassLibary.Objects.LanguageContent,ClassLibary">
+      <property name="NameDB" column="Title"  type="string" not-null="false" />
+    </component>
+    <component name="Content" class="ClassLibary.Objects.LanguageContent,ClassLibary">
+      <property name="NameDB" column="Content"  type="string" not-null="false" />
+    </component>
+    <property name="CreatedDate">
+      <column name="CreatedDate" sql-type="datetime" not-null="false" />
+    </property>
+    <property name="Status">
+      <column name="Status" sql-type="int" not-null="false" />
+    </property>
+    <property name="ObjectType">
+      <column name="ObjectType" sql-type="int" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

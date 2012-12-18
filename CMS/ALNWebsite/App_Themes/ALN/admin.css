@@ -1,0 +1,62 @@
+/*
+      Created by CSS Portal Layout Generator
+	  
+	  http://www.cssportal.com
+	  	  
+*/
+
+* { padding: 0; margin: 0; }
+
+.body {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 13px;
+ background: url('images/qsfWrap.jpg') repeat-x scroll 0 0 #000F16;
+}
+
+p {
+ padding: 10px;
+}
+
+.wrapper { 
+ margin: 0 auto;
+ width: 1024px;
+}
+
+.wrapper .content { 
+ float: left;
+ color: #333;
+ background-color:White;
+ height: 350px;
+ width: 800px;
+ display:inline;
+ 
+}
+
+.wrapper .header {
+ color: #333;
+ width: 1024px;
+ float: left;
+ height: 50px;
+ background: #000099;
+ margin-bottom:10px;
+}
+
+.wrapper .leftcolumn { 
+ color: #333; 
+ height: 250px;
+ width: 200px;
+ float: left;
+ padding:0 24px 0 0;
+}
+.title
+{
+    height:37px;
+    background-image:url('Images/Title.gif');
+    background-repeat:repeat-x;
+    color:Black;
+    font-size:16px;
+    vertical-align:middle;
+    padding:10px 0 0 25px;
+    float:none;
+}
+

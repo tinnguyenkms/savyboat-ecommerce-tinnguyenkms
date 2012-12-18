@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="EmailUser" table="EmailUser" lazy="true" >
+    <id name="Id" column="Id" type="Guid" >
+      <generator class="guid" />      
+    </id>
+    <property name="Description">
+      <column name="Description" sql-type="nvarchar" not-null="false" />
+    </property>
+    
+    <property name="Email">
+      <column name="Email" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DisPlayName">
+      <column name="DisPlayName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Status">
+      <column name="Status" sql-type="int" not-null="false" />
+    </property>    
+  </class>
+</hibernate-mapping>

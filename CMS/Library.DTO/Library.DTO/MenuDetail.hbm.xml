@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MenuDetail" table="MenuDetail" lazy="true" >      
+    <id name="Id" column="Id" type="Guid">
+      <generator class="guid" />      
+    </id>
+    <component name="Name" class="ClassLibary.Objects.LanguageContent,ClassLibary">
+      <property name="NameDB" column="Name"  type="string" not-null="false" />
+    </component>
+    <property name="MenuOrder">
+      <column name="MenuOrder" sql-type="int" not-null="false" />
+    </property>
+    <property name="ObjectType">
+      <column name="ObjectType" sql-type="int" not-null="false" />
+    </property>
+    <property name="NavigateURL">
+      <column name="NavigateURL" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="ImageUrl">
+      <column name="ImageUrl" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Code">
+      <column name="Code" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="MenuType">
+      <column name="MenuType" sql-type="bit" not-null="false" />
+    </property>
+    <property name="UnClick">
+      <column name="UnClick" sql-type="bit" not-null="false" />
+    </property>
+    <many-to-one insert="false" update="false" lazy="false" 
+                 name="Menu" 
+                 column="MenuId" 
+                 class="Library.DTO.Menu,Library.DTO"
+                 foreign-key="MenuId"/>          
+    <bag name="ProductDetails" inverse="true" cascade="none" lazy="true">
+      <key column="MenuDetailId" />
+      <one-to-many class="Library.DTO.ProductDetail" />
+    </bag>
+    <bag name="Parent" inverse="true" cascade="none" lazy="true">
+      <key column="ParentId" />
+      <one-to-many class="Library.DTO.MenuDetail" />
+    </bag>
+    <bag name="NewsDetails" inverse="true" cascade="none" lazy="true">
+      <key column="MenuDetailId" />
+      <one-to-many class="Library.DTO.NewsDetail" />
+    </bag>
+  </class>
+</hibernate-mapping>

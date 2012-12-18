@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="ProductDetail" table="ProductDetail" lazy="true" >     
+    <id name="Id" column="Id" type="Guid">
+      <generator class="guid" />      
+    </id>  
+    <component name="Name" class="ClassLibary.Objects.LanguageContent,ClassLibary">
+      <property name="NameDB" column="Name"  type="string" not-null="false" />
+    </component>
+    <component name="Content" class="ClassLibary.Objects.LanguageContent,ClassLibary">
+      <property name="NameDB" column="Content"  type="string" not-null="false" />
+    </component>      
+    <property name="ImageUrl">
+      <column name="ImageUrl" sql-type="ntext" not-null="false" />
+    </property>
+    <property name="Status">
+      <column name="Status" sql-type="int" not-null="false" />
+    </property>
+    <property name="Avatar">
+      <column name="Avatar" sql-type="int" not-null="false" />
+    </property>
+    <property name="Price">
+      <column name="Price" sql-type="double" not-null="false" />
+    </property>
+    <property name="Dimensions">
+      <column name="Dimensions" sql-type="string" not-null="false" />
+    </property>
+    <property name="PackageSize">
+      <column name="PackageSize" sql-type="string" not-null="false" />
+    </property>
+    <property name="SKU">
+      <column name="SKU" sql-type="string" not-null="false" />
+    </property>
+    <property name="Weight">
+      <column name="Weight" sql-type="double" not-null="false" />
+    </property>
+    <property name="PromtionPrice">
+      <column name="PromtionPrice" sql-type="double" not-null="false" />
+    </property>
+    <property name="GroupId">
+      <column name="GroupId" sql-type="int" not-null="false" />
+    </property>
+    <property name="Total">
+      <column name="Total" sql-type="int" not-null="false" />
+    </property>
+    <property name="Tag">
+      <column name="Tag" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="CreatedDate">
+      <column name="CreatedDate" sql-type="datetime" not-null="false" />
+    </property>
+    <property name="UpdatedDate">
+      <column name="UpdatedDate" sql-type="datetime" not-null="false" />
+    </property>
+    <property name="Avilablein">
+      <column name="Avilablein" sql-type="datetime" not-null="false" />
+    </property>
+    <property name="Timeexpiration">
+      <column name="Timeexpiration" sql-type="datetime" not-null="false" />
+    </property>
+    <bag name="Imagelibrary" inverse="true" cascade="all" lazy="false">
+      <key column="ProductDetailId" />
+      <one-to-many class="Library.DTO.ImageLibrary" />
+    </bag>
+    <many-to-one lazy="false" update="true" insert="true"
+            name="MenuDetails"
+            column="MenuDetailId"
+            class="Library.DTO.MenuDetail,Library.DTO"
+            foreign-key="MenuDetailId"/>
+  </class>
+</hibernate-mapping>

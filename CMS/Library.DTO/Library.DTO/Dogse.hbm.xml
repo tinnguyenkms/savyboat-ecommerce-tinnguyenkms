@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Dogse" table="Dogse" lazy="true" >
+    <id name="Id" column="Id" type="Guid">
+      <generator class="guid"></generator>
+    </id>
+    <property name="Influent">
+      <column name="Influent" sql-type="nvarchar" not-null="true"></column>
+    </property>
+    <property name="Aeration_tank">
+      <column name="Aeration_tank" sql-type="nvarchar" not-null="true"></column>
+    </property>
+    <property name="Days_1_5">
+      <column name="Days_1_5" sql-type="int" not-null="true"></column>
+    </property>
+	  <property name="Weeks_2_6">
+		  <column name="Weeks_2_6" sql-type="int" not-null="true"></column>
+	  </property>
+	  <property name="Weeks_7">
+		  <column name="Weeks_7" sql-type="int" not-null="true"></column>
+	  </property>
+	  <property name="Object_type">
+		  <column name="Object_type" sql-type="int" not-null="true"></column>
+	  </property>
+  </class>
+  
+</hibernate-mapping>

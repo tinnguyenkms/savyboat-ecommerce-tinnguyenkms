@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="NewsDetail" table="NewsDetail" lazy="true" >
+    <id name="Id" column="Id" type="Guid" >
+      <generator class="guid" />      
+    </id>   
+    <component name="Title" class="ClassLibary.Objects.LanguageContent,ClassLibary">
+      <property name="NameDB" column="Title"  type="string" not-null="false" />
+    </component>  
+    <component name="Contents" class="ClassLibary.Objects.LanguageContent,ClassLibary">
+      <property name="NameDB" column="Contents"  type="string" not-null="false" />
+    </component>
+    <property name="ImageAvatar">
+      <column name="ImageAvatar" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Tag">
+      <column name="Tag" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="CreatedDate">
+      <column name="CreatedDate" sql-type="datetime" not-null="false" />
+    </property>
+
+    <property name="Status">
+      <column name="Status" sql-type="int" not-null="false" />
+    </property>
+    <property name="GroupId">
+      <column name="GroupId" sql-type="int" not-null="false" />
+    </property>
+    <property name="Timeexpiration">
+      <column name="Timeexpiration" sql-type="int" not-null="false" />
+    </property>
+    <many-to-one lazy="false"
+                 name="New"
+                 column="NewsId"
+                 class="Library.DTO.News,Library.DTO"
+                 foreign-key="NewsId"/>
+    <many-to-one lazy="false" update="false" insert="true"
+             name="MenuDetails"
+             column="MenuDetailId"
+             class="Library.DTO.MenuDetail,Library.DTO"
+             foreign-key="MenuDetailId"/>
+  </class>
+</hibernate-mapping>

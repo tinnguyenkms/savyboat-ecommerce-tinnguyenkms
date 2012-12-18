@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="ALNWebsite.Site.Master.Master" %>
+<%@ Register Src="~/Site/Control/FooterControl.ascx" TagPrefix="uc" TagName="Footer" %>
+<%@ Register Src="~/Site/Control/BannerControl.ascx" TagPrefix="uc" TagName="Banner" %>
+<%@ Register Src="~/Site/Control/Counter.ascx" TagPrefix="uc" TagName="Counter" %>
+<%@ Register Src="~/Site/Control/ListMenuVertical.ascx" TagPrefix="uc" TagName="ListMenuVertical" %>
+<%@ Register Src="~/Site/Control/MenuHorizol.ascx" TagPrefix="uc" TagName="MenuHor" %>
+<%@ Register Src="~/Site/Control/TimeAndSearchControl.ascx" TagPrefix="uc" TagName="TimeandSearchcontrol" %>
+<%@ Register Src="~/Site/Control/ControlImage.ascx" TagPrefix="uc" TagName="Image" %>
+<%@ Register Src="~/Site/Control/forum.ascx" TagPrefix="uc" TagName="ImagForum" %>
+<%@ Register Src="~/Site/Control/dv.ascx" TagPrefix="uc" TagName="dv" %>
+<%@ Register Src="~/Site/Control/PartnerList.ascx" TagPrefix="uc" TagName="ListPartner" %>
+<%@ Register Src="~/Site/Control/Boxmarquee2.ascx" TagPrefix="uc" TagName="Boxmarquee2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <!-- tA3RzgTr19M7J5rE0gJNRXee-2A -->
+
+<meta name="alexaVerifyID" content="tA3RzgTr19M7J5rE0gJNRXee-2A" />
+
+<meta name="keywords"
+content="aln,an loc nam, hoa chat cong nghiep, hóa chất công nghiệp, hóa chất dân dụng, hoa chat dan dung, xu ly nuoc thai, xử lý nước thải, tA3RzgTr19M7J5rE0gJNRXee-2A" />
+<meta http-equiv="charset" content="utf-8" />
+<meta name="robots" content="index,follow" />
+<meta name="copyright" content="Copyright 2012 Aln.com.vn" />
+<meta content='DESCRIPTION' name='DESCRIPTION'/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link type="text/css" rel="stylesheet" href="~/Styles/reset.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/text.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/960_fluid.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/main.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/bar_nav.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/side_nav.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/css3.css" />
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32747780-1']);
+    _gaq.push(['_setDomainName', 'aln.com.vn']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var cont_left = $("#container").position().left;
+            $("a img").hover(function () {
+                // hover in
+                $(this).parent().parent().css("z-index", 1);
+                $(this).animate({
+                    height: "250",
+                    width: "250",
+                    left: "-=50",
+                    top: "-=50"
+                }, "fast");
+            }, function () {
+                // hover out
+                $(this).parent().parent().css("z-index", 0);
+                $(this).animate({
+                    height: "150",
+                    width: "150",
+                    left: "+=50",
+                    top: "+=50"
+                }, "fast");
+            });
+
+            $(".img").each(function (index) {
+                var left = (index * 160) + cont_left;
+                $(this).css("left", left + "px");
+            });
+        });
+    </script>
+</head>
+<body>  
+    <form id="form1" runat="server">
+     <asp:ScriptManager runat="server" ID="manager">
+    </asp:ScriptManager>    
+    <div align="center">     
+        <div>
+            <table width="1024px">
+                <tr>
+                    <td colspan="3"><uc:Banner id="Banner" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><uc:MenuHor id="MenuHor" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><uc:TimeandSearchcontrol id="timeandsearch" runat="server" /></td>
+                </tr>
+                <tr>
+                    <td width="200px" style="vertical-align: top"> 
+                    <div>
+                    <uc:ListMenuVertical ID="ListMenuVertical" runat="server" />
+                    </div>
+                    <div>
+                        <uc:dv id="dvcontrol" runat="server" />
+                    </div>
+                    <div><uc:ImagForum ID="ImagForums" runat="server" /></div>
+                    </td>
+                    <td style="vertical-align: top" >
+                        <div class="content round_all clearfix White Borderradius">
+                            
+                          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                          </asp:ContentPlaceHolder>
+                          
+                          </div>
+                    </td>
+                    <td width="200px" style="vertical-align: top">
+                    <div> <uc:Boxmarquee2 ID="Boxmarquee2control" runat="server" />
+                    </div>
+                    <div><uc:Counter ID="Counter" runat="server" /></div>
+                                        
+                    <div><uc:ListPartner ID="ListPartnerweb" runat="server" />  </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><uc:Footer id="Footer" runat="server" />
+                    </td>
+                </tr>
+            </table>
+            
+            
+        </div>
+      </div>     
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>	
+
+	<script type="text/javascript">
+	    $('#colour_switcher a').click(function () {
+	        var colour = $(this).attr('id');
+	        var cssUrl = ('theme_' + colour + '.css');
+
+	        var link = $("<link>");
+	        link.attr({
+	            type: 'text/css',
+	            rel: 'stylesheet',
+	            href: 'styles/skins/' + cssUrl
+	        });
+
+	        $("head").append(link);
+
+	        $("img").each(function () {
+	            $(this).attr("src", $(this).attr("src").replace("grey", "white"));
+	        });
+	    });
+
+	    $('#bg_switcher a').click(function () {
+	        var link = $(this).attr('href');
+	        var cssLink = ('url(' + link + ')');
+	        $('body').css('background', cssLink);
+	        return false;
+	    });
+
+	</script>
+    </form>
+    
+			
+</body>
+</html>

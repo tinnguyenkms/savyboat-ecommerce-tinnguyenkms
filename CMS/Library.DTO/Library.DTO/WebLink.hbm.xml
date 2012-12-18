@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="WebLink" table="WebLink" lazy="true" >
+    <id name="Id" column="Id" type="Guid" >
+      <generator class="guid" />      
+    </id>
+    <property name="Link">
+      <column name="Link" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Content">
+      <column name="Content" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="Title">
+      <column name="Title" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="CreatedDate">
+      <column name="CreatedDate" sql-type="datetime" not-null="false" />
+    </property>
+    <property name="Status">
+      <column name="Status" sql-type="int" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

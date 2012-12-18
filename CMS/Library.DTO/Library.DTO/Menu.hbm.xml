@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="Menu" table="Menu" lazy="true" >
+    <id name="Id" column="Id" type="Guid" >
+      <generator class="guid" />      
+    </id>
+    <component name="Name" class="ClassLibary.Objects.LanguageContent,ClassLibary">
+      <property name="NameDB" column="Name"  type="string" not-null="false" />
+    </component>
+    <property name="is_deleted">
+      <column name="is_deleted" sql-type="int" not-null="false" />
+    </property>
+    <bag name="MenuDetails" inverse="true" cascade="none" lazy="true">
+      <key column="MenuId" />
+      <one-to-many class="Library.DTO.MenuDetail" />
+    </bag>
+  </class>
+</hibernate-mapping>

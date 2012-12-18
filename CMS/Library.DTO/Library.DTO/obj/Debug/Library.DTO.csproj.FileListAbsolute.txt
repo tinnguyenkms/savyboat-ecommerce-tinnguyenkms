@@ -1,0 +1,15 @@
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\bin\Debug\Library.DTO.dll
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\bin\Debug\Library.DTO.pdb
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\bin\Debug\ClassLibary.dll
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\bin\Debug\office.dll
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\bin\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\bin\Debug\office.xml
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\obj\Debug\Library.DTO.dll
+C:\Users\NGUYEN\Desktop\Code\NewProject\LibraryFrameWork\LibraryFrameWork\Library.DTO\Library.DTO\obj\Debug\Library.DTO.pdb
+D:\Working\NewProject\Bin\Library.DTO.dll
+D:\Working\NewProject\Bin\Library.DTO.pdb
+D:\Working\NewProject\Library.DTO\Library.DTO\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\NewProject\Library.DTO\Library.DTO\obj\Debug\Library.DTO.dll
+D:\Working\NewProject\Library.DTO\Library.DTO\obj\Debug\Library.DTO.pdb

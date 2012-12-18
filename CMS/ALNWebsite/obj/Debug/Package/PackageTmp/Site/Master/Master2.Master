@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master2.Master.cs" Inherits="ALNWebsite.Site.Master.Master2" %>
+<%@ Register Src="~/Site/Control/FooterControl.ascx" TagPrefix="uc" TagName="Footer" %>
+<%@ Register Src="~/Site/Control/BannerControl.ascx" TagPrefix="uc" TagName="Banner" %>
+<%@ Register Src="~/Site/Control/Counter.ascx" TagPrefix="uc" TagName="Counter" %>
+<%@ Register Src="~/Site/Control/ListMenuVertical.ascx" TagPrefix="uc" TagName="ListMenuVertical" %>
+<%@ Register Src="~/Site/Control/MenuHorizol.ascx" TagPrefix="uc" TagName="MenuHor" %>
+<%@ Register Src="~/Site/Control/TimeAndSearchControl.ascx" TagPrefix="uc" TagName="TimeandSearchcontrol" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<link type="text/css" rel="stylesheet" href="~/Styles/reset.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/text.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/960_fluid.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/main.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/bar_nav.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/side_nav.css" />
+<link type="text/css" rel="stylesheet" href="~/Styles/css3.css" />
+</head>
+<body>  
+    <form id="form1" runat="server">
+     <asp:ScriptManager runat="server" ID="manager">
+    </asp:ScriptManager>    
+    <div align="center">     
+        <div>
+            <table width="1024px">
+                <tr>
+                    <td colspan="3"><uc:Banner id="Banner" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><uc:MenuHor id="MenuHor" runat="server" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><uc:TimeandSearchcontrol id="timeandsearch" runat="server" /></td>
+                </tr>
+                <tr>
+                    <td width="200px" style="vertical-align: top"> <uc:ListMenuVertical ID="ListMenuVertical" runat="server" />
+                    </td>
+                    <td style="vertical-align: top" >
+                        <div class="content round_all clearfix White Borderradius">
+                           
+                          <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                          </asp:ContentPlaceHolder>
+                          
+                          </div>
+                    </td>                   
+                </tr>
+                <tr>
+                    <td colspan="2"><uc:Footer id="Footer" runat="server" />
+                    </td>
+                </tr>
+            </table>
+            
+            
+        </div>
+      </div>     
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>	
+
+	<script type="text/javascript">
+	    $('#colour_switcher a').click(function () {
+	        var colour = $(this).attr('id');
+	        var cssUrl = ('theme_' + colour + '.css');
+
+	        var link = $("<link>");
+	        link.attr({
+	            type: 'text/css',
+	            rel: 'stylesheet',
+	            href: 'styles/skins/' + cssUrl
+	        });
+
+	        $("head").append(link);
+
+	        $("img").each(function () {
+	            $(this).attr("src", $(this).attr("src").replace("grey", "white"));
+	        });
+	    });
+
+	    $('#bg_switcher a').click(function () {
+	        var link = $(this).attr('href');
+	        var cssLink = ('url(' + link + ')');
+	        $('body').css('background', cssLink);
+	        return false;
+	    });
+
+	</script>
+    </form>
+    
+			
+</body>
+</html>

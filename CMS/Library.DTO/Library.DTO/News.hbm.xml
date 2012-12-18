@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping assembly="Library.DTO" namespace="Library.DTO" xmlns="urn:nhibernate-mapping-2.2">
+  <class name="News" table="News" lazy="true" >
+    <id name="Id" column="Id" type="Guid" >
+      <generator class="guid" />      
+    </id>
+    <property name="Name">
+      <column name="Name" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="CreatedDate">
+      <column name="CreatedDate" sql-type="datetime" not-null="false" />
+    </property>
+
+    <property name="Status">
+      <column name="Status" sql-type="int" not-null="false" />
+    </property>
+    
+    <bag name="NewsDetails" inverse="true" cascade="none" lazy="true">
+      <key column="NewsId" />
+      <one-to-many class="Library.DTO.NewsDetail" />
+    </bag>
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,93 @@
+D:\Working 2\FrameWork\ALNWebsite\bin\ALNWebsite.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\ALNWebsite.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.BLL.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.DTO.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.Presentation.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.Utility.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.DAL.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\EducationSystem.ORM.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\NHibernate.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\log4net.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\EducationSystem.Utility.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Iesi.Collections.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Castle.DynamicProxy.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.BLL.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.DTO.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.Presentation.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.Utility.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\Library.DAL.pdb
+D:\Working 2\FrameWork\ALNWebsite\obj\Debug\ResolveAssemblyReference.cache
+D:\Working 2\FrameWork\ALNWebsite\obj\Debug\ALNWebsite.dll
+D:\Working 2\FrameWork\ALNWebsite\obj\Debug\ALNWebsite.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\App_Web_functioncommand.ascx.cdcab7d2.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\App_Web_panelcontrol.ascx.cdcab7d2.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\App_Web_ribbonlayout.ascx.cdcab7d2.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\ClassLibary.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\SkinEmbedded.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Microsoft.Office.Interop.Excel.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\office.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\Microsoft.Office.Interop.Excel.xml
+D:\Working 2\FrameWork\ALNWebsite\bin\office.xml
+D:\Working 2\FrameWork\ALNWebsite\bin\App_Web_slidetounlock.ascx.cdcab7d2.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\App_Web_multiwindow.ascx.cdcab7d2.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.Presenter.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.BLL.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.DTO.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.DAL.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.Utility.dll
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.Presenter.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.BLL.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.DTO.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.DAL.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\DMS.Utility.pdb
+D:\Working 2\FrameWork\ALNWebsite\bin\log4net.xml
+D:\Working\NewProject\ALNWebsite\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\NewProject\ALNWebsite\bin\ALNWebsite.dll
+D:\Working\NewProject\ALNWebsite\bin\ALNWebsite.pdb
+D:\Working\NewProject\ALNWebsite\bin\Library.BLL.dll
+D:\Working\NewProject\ALNWebsite\bin\Library.DAL.dll
+D:\Working\NewProject\ALNWebsite\bin\Library.DTO.dll
+D:\Working\NewProject\ALNWebsite\bin\Library.Presentation.dll
+D:\Working\NewProject\ALNWebsite\bin\Library.Utility.dll
+D:\Working\NewProject\ALNWebsite\bin\log4net.dll
+D:\Working\NewProject\ALNWebsite\bin\Microsoft.Office.Interop.Excel.dll
+D:\Working\NewProject\ALNWebsite\bin\EducationSystem.ORM.dll
+D:\Working\NewProject\ALNWebsite\bin\NHibernate.dll
+D:\Working\NewProject\ALNWebsite\bin\office.dll
+D:\Working\NewProject\ALNWebsite\bin\Iesi.Collections.dll
+D:\Working\NewProject\ALNWebsite\bin\Castle.DynamicProxy.dll
+D:\Working\NewProject\ALNWebsite\bin\Library.Presentation.pdb
+D:\Working\NewProject\ALNWebsite\bin\Library.Utility.pdb
+D:\Working\NewProject\ALNWebsite\bin\Library.BLL.pdb
+D:\Working\NewProject\ALNWebsite\bin\Library.DAL.pdb
+D:\Working\NewProject\ALNWebsite\bin\Library.DTO.pdb
+D:\Working\NewProject\ALNWebsite\bin\log4net.xml
+D:\Working\NewProject\ALNWebsite\bin\Microsoft.Office.Interop.Excel.xml
+D:\Working\NewProject\ALNWebsite\bin\office.xml
+D:\Working\NewProject\ALNWebsite\obj\Debug\ALNWebsite.dll
+D:\Working\NewProject\ALNWebsite\obj\Debug\ALNWebsite.pdb
+D:\TinNguyen\NewProject\ALNWebsite\bin\ALNWebsite.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\ALNWebsite.pdb
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.BLL.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.DAL.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.DTO.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.Presentation.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.Utility.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\log4net.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\Microsoft.Office.Interop.Excel.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\EducationSystem.ORM.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\NHibernate.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\office.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\Iesi.Collections.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\Castle.DynamicProxy.dll
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.Presentation.pdb
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.Utility.pdb
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.BLL.pdb
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.DAL.pdb
+D:\TinNguyen\NewProject\ALNWebsite\bin\Library.DTO.pdb
+D:\TinNguyen\NewProject\ALNWebsite\bin\log4net.xml
+D:\TinNguyen\NewProject\ALNWebsite\bin\Microsoft.Office.Interop.Excel.xml
+D:\TinNguyen\NewProject\ALNWebsite\bin\office.xml
+D:\TinNguyen\NewProject\ALNWebsite\obj\Debug\ALNWebsite.csprojResolveAssemblyReference.cache
+D:\TinNguyen\NewProject\ALNWebsite\obj\Debug\ALNWebsite.dll
+D:\TinNguyen\NewProject\ALNWebsite\obj\Debug\ALNWebsite.pdb
