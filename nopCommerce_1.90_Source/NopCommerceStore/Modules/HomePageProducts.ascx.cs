@@ -55,7 +55,11 @@ namespace NopSolutions.NopCommerce.Web.Modules
                 this.Visible = false;
             }
         }
-
+        protected void ibtnBuynow_Click(object sender, EventArgs e)
+        {
+            ImageButton ibtn = (ImageButton)sender;
+            Response.Redirect(ibtn.CommandArgument);
+        }
         protected void dlCatalog_ItemDataBound(object sender, DataListItemEventArgs e)
         {
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
@@ -63,9 +67,10 @@ namespace NopSolutions.NopCommerce.Web.Modules
                 var product = e.Item.DataItem as Product;
                 if (product != null)
                 {
-                    string productURL = SEOHelper.GetProductUrl(product);
-
+                    string productURL = SEOHelper.GetProductUrl(product);                    
+                    ProductPrice1Control ctrprice = e.Item.FindControl("ctrlProductPrice") as ProductPrice1Control;
                     var hlImageLink = e.Item.FindControl("hlImageLink") as HyperLink;
+                    var ibtnBuynow = e.Item.FindControl("ibtnBuynow") as ImageButton;
                     if (hlImageLink != null)
                     {
                         var picture = product.DefaultPicture;
@@ -75,14 +80,16 @@ namespace NopSolutions.NopCommerce.Web.Modules
                             hlImageLink.ImageUrl = this.PictureService.GetDefaultPictureUrl(this.SettingManager.GetSettingValueInteger("Media.Product.ThumbnailImageSize", 125));
 
                         hlImageLink.NavigateUrl = productURL;
+                        ibtnBuynow.CommandArgument = productURL;
                         hlImageLink.ToolTip = String.Format(GetLocaleResourceString("Media.Product.ImageLinkTitleFormat"), product.LocalizedName);
-                        hlImageLink.Text = String.Format(GetLocaleResourceString("Media.Product.ImageAlternateTextFormat"), product.LocalizedName);
-                        
+                        hlImageLink.Text = String.Format(GetLocaleResourceString("Media.Product.ImageAlternateTextFormat"), product.LocalizedName);                       
+                        ctrprice.ProductVariantId = product.ProductVariants[0].ProductVariantId;
                     }
 
                     var hlProduct = e.Item.FindControl("hlProduct") as HyperLink;
                     if (hlProduct != null)
                     {
+                        ibtnBuynow.CommandArgument = productURL;
                         hlProduct.NavigateUrl = productURL;
                         hlProduct.Text = Server.HtmlEncode(product.LocalizedName);
                     }
