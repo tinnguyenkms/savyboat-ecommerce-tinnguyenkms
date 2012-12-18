@@ -1,0 +1,16 @@
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Nop.Payment.Moneris.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Nop.Payment.Moneris.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Nop.BusinessLogic.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Nop.Common.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Ionic.Zip.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\MigraDoc.DocumentObjectModel.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\MigraDoc.Rendering.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\PdfSharp.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\PdfSharp.Charting.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Nop.BusinessLogic.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\bin\Debug\Nop.Common.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\obj\Debug\Nop.Payment.Moneris.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneris\obj\Debug\Nop.Payment.Moneris.pdb

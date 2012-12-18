@@ -1,0 +1,16 @@
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Nop.Payment.PayPoint.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Nop.Payment.PayPoint.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Nop.BusinessLogic.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Nop.Common.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Ionic.Zip.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\MigraDoc.DocumentObjectModel.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\MigraDoc.Rendering.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\PdfSharp.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\PdfSharp.Charting.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Nop.BusinessLogic.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\bin\Debug\Nop.Common.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\obj\Debug\Nop.Payment.PayPoint.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.PayPoint\obj\Debug\Nop.Payment.PayPoint.pdb

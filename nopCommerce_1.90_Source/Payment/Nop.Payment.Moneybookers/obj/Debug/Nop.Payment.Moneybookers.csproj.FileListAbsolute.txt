@@ -1,0 +1,16 @@
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Nop.Payment.Moneybookers.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Nop.Payment.Moneybookers.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Nop.BusinessLogic.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Nop.Common.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Ionic.Zip.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\MigraDoc.DocumentObjectModel.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\MigraDoc.Rendering.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\PdfSharp.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\PdfSharp.Charting.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Nop.BusinessLogic.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\bin\Debug\Nop.Common.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\obj\Debug\Nop.Payment.Moneybookers.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.Moneybookers\obj\Debug\Nop.Payment.Moneybookers.pdb

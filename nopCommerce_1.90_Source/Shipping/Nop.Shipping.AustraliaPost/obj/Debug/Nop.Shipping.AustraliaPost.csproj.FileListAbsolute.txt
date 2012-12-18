@@ -1,0 +1,16 @@
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Nop.Shipping.AustraliaPost.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Nop.Shipping.AustraliaPost.pdb
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Nop.BusinessLogic.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Nop.Common.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Ionic.Zip.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\MigraDoc.DocumentObjectModel.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\MigraDoc.Rendering.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\PdfSharp.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\PdfSharp.Charting.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Nop.BusinessLogic.pdb
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\bin\Debug\Nop.Common.pdb
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\obj\Debug\Nop.Shipping.AustraliaPost.dll
+D:\Working\nopCommerce_1.90_Source\Shipping\Nop.Shipping.AustraliaPost\obj\Debug\Nop.Shipping.AustraliaPost.pdb

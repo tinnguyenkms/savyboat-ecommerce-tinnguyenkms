@@ -1,0 +1,16 @@
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Nop.Payment.TwoCheckout.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Nop.Payment.TwoCheckout.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Nop.BusinessLogic.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Nop.Common.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Ionic.Zip.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\MigraDoc.DocumentObjectModel.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\MigraDoc.Rendering.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\PdfSharp.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\PdfSharp.Charting.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Nop.BusinessLogic.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\bin\Debug\Nop.Common.pdb
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\obj\Debug\Nop.Payment.TwoCheckout.dll
+D:\Working\nopCommerce_1.90_Source\Payment\Nop.Payment.TwoCheckout\obj\Debug\Nop.Payment.TwoCheckout.pdb
