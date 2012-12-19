@@ -93,10 +93,17 @@ namespace NopSolutions.NopCommerce.Web.Templates.Categories
 
             //featured products
             var featuredProducts = category.FeaturedProducts;
-            if (featuredProducts.Count > 0)
+            if (featuredProducts.Count >= 3)
             {
-                dlFeaturedProducts.DataSource = featuredProducts;
+                List<Product> listsubmain = new List<Product>();
+                listsubmain.Add(featuredProducts[1]);
+                listsubmain.Add(featuredProducts[2]);
+                dlFeaturedProducts.DataSource = listsubmain;
                 dlFeaturedProducts.DataBind();
+                List<Product> listmain = new List<Product>();
+                listmain.Add(featuredProducts[0]);
+                dlFeaturedProductsmain.DataSource = listmain;
+                dlFeaturedProductsmain.DataBind();
             }
             else
             {

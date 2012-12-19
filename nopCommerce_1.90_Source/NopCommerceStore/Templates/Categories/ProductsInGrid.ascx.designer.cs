@@ -49,6 +49,24 @@ namespace NopSolutions.NopCommerce.Web.Templates.Categories {
         protected global::System.Web.UI.WebControls.Panel pnlFeaturedProducts;
         
         /// <summary>
+        /// dlFeaturedProductsmain control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList dlFeaturedProductsmain;
+        
+        /// <summary>
+        /// ctrTopicHomePage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Modules.TopicHomePage ctrTopicHomePage;
+        
+        /// <summary>
         /// dlFeaturedProducts control.
         /// </summary>
         /// <remarks>

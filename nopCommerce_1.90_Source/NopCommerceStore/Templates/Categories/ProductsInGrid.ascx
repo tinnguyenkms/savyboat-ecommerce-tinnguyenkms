@@ -1,8 +1,10 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" Inherits="NopSolutions.NopCommerce.Web.Templates.Categories.ProductsInGrid"
     CodeBehind="ProductsInGrid.ascx.cs" %>
 <%@ Register TagPrefix="nopCommerce" TagName="ProductBox1" Src="~/Modules/ProductBox1.ascx" %>
+<%@ Register TagPrefix="nopCommerce" TagName="ProductBoxMainCategory" Src="~/Modules/ProductBoxMainCategory.ascx" %>
 <%@ Register TagPrefix="nopCommerce" TagName="PriceRangeFilter" Src="~/Modules/PriceRangeFilter.ascx" %>
 <%@ Register TagPrefix="nopCommerce" TagName="ProductSpecificationFilter" Src="~/Modules/ProductSpecificationFilter.ascx" %>
+<%@ Register TagPrefix="nopCommerce" TagName="TopicHomePageControl" Src="~/Modules/TopicHomePage.ascx" %>
 <div class="category-page">
     <% if (this.SettingManager.GetSettingValueBoolean("Media.CategoryBreadcrumbEnabled"))
        { %>
@@ -46,12 +48,24 @@
     <div class="clear">
     </div>
     <asp:Panel runat="server" ID="pnlFeaturedProducts" class="featured-product-grid">
-        <div class="title">
-            <%=GetLocaleResourceString("Products.FeaturedProducts")%>
+        <div style="float:left; width:65%">
+            <div>
+             <asp:DataList ID="dlFeaturedProductsmain" runat="server" RepeatColumns="1" RepeatDirection="Vertical"
+                RepeatLayout="Flow" ItemStyle-CssClass="item-box">
+                <ItemTemplate>
+                    <nopCommerce:ProductBoxMainCategory ID="ctrlProductBoxmain" Product='<%# Container.DataItem %>'
+                        runat="server" />
+                </ItemTemplate>
+            </asp:DataList>             
+            </div>
+            <div>
+                 <nopCommerce:TopicHomePageControl ID="ctrTopicHomePage" runat="server" TopicName="categorynotice"
+                OverrideSEO="false"></nopCommerce:TopicHomePageControl>
+            </div>
         </div>
-        <div>
-            <asp:DataList ID="dlFeaturedProducts" runat="server" RepeatColumns="2" RepeatDirection="Horizontal"
-                RepeatLayout="Table" ItemStyle-CssClass="item-box">
+        <div style="float:right;">
+            <asp:DataList ID="dlFeaturedProducts" runat="server" RepeatColumns="1" RepeatDirection="Vertical"
+                RepeatLayout="Flow" ItemStyle-CssClass="item-box">
                 <ItemTemplate>
                     <nopCommerce:ProductBox1 ID="ctrlProductBox" Product='<%# Container.DataItem %>'
                         runat="server" />
