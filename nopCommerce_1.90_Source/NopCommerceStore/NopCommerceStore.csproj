@@ -4005,6 +4005,13 @@
     <Compile Include="Modules\CategoryNavigationMenuHorizal.ascx.designer.cs">
       <DependentUpon>CategoryNavigationMenuHorizal.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Modules\ProductBoxMainCategory.ascx.cs">
+      <DependentUpon>ProductBoxMainCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ProductBoxMainCategory.ascx.designer.cs">
+      <DependentUpon>ProductBoxMainCategory.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Modules\TopicHomePage.ascx.cs">
       <DependentUpon>TopicHomePage.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -6168,11 +6175,13 @@
     <Content Include="App_Themes\darkOrange\images\Button-Search.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\background-slogangiuapage.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\background - top banner.png" />
+    <Content Include="App_Themes\darkOrange\images\Savyboat\Backgroundslogangiuapagecategory.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Best Seller.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\bg_noticered.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Button - Buy Now.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Button - Search.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Button - Sign Up.png" />
+    <Content Include="App_Themes\darkOrange\images\Savyboat\hotbuy-big.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\HotBuy.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Line Best Seller.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\logo savyboat.png" />
@@ -6344,6 +6353,7 @@
     <Content Include="images\up.jpg" />
     <Content Include="images\walle.jpg" />
     <Content Include="Modules\CategoryNavigationMenuHorizal.ascx" />
+    <Content Include="Modules\ProductBoxMainCategory.ascx" />
     <Content Include="Modules\TopicHomePage.ascx" />
     <Content Include="Modules\InfoBlock3.ascx" />
     <Content Include="Modules\InfoBlock2.ascx" />
