@@ -16,8 +16,7 @@
                       <nopCommerce:ProductPrice1 ID="ctrlProductPrice" runat="server"  />
                 </h2>
                 <div class="buttonbuynow">
-                <asp:ImageButton ID="ibtnBuynow" runat="server"  ImageUrl="~/App_Themes/darkOrange/images/Savyboat/ButtonBuyNow.png" OnClick="ibtnBuynow_Click" />
-                    
+                <asp:ImageButton ID="ibtnBuynow" runat="server"  ImageUrl="~/App_Themes/darkOrange/images/Savyboat/ButtonBuyNow.png" OnClick="ibtnBuynow_Click" />                    
                 </div>
             </div>
         </ItemTemplate>        

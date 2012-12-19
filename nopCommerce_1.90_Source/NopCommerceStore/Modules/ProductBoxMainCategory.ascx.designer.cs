@@ -10,7 +10,7 @@
 namespace NopSolutions.NopCommerce.Web.Modules {
     
     
-    public partial class ProductBox1Control {
+    public partial class ProductBoxMainCategory {
         
         /// <summary>
         /// hlImageLink control.
