@@ -2568,7 +2568,7 @@ ul.languagelist li .selected
 	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 520px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -2591,25 +2591,73 @@ ul.languagelist li .selected
 
 .featured-product-grid .product-item
 {
-	text-align: center;
-	margin: 10px 5px 10px 5px;
+	text-align: center;	
 	width: 250px;
-	background: url('images/prod_grid_box_bg.gif') no-repeat 0 100%;
+	height:200px;
+	background-image: url('images/Savyboat/HotBuy.png');
+    background-repeat:no-repeat ;    
+    position:relative;
+    display: block;           
+    background-position:right top;
+      border-radius: 1px;
+    border-color:#C6C6C8;
+    border-width:1px;
+    border-style:double;
+}
+.featured-product-grid .product-item-main
+{
+	text-align: center;	
+	width: 530px;
+	height: 400px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    border-color:#C6C6C8;
+    border-width:1px;
+    border-style:double;
+    background-image: url('images/Savyboat/hotbuy-big.png');
+    background-repeat:no-repeat ;    
+    position:relative;
+    display: block;           
+    background-position:right top;
 }
 
 .featured-product-grid .product-item .product-title
 {
+    margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
 	font-weight: bold;
 	font-size:12px;
-	background: url('images/deal_box_hl.gif') no-repeat 0 0;
-	padding: 0 0 0 10px;
-	text-transform: none;
+	left:2px;
+    top:1px;
+    position:absolute;
+    display: block;  
+    color:#C6C6C8;    
 }
-
-.featured-product-grid .product-item .product-title a
+.featured-product-grid .product-item-main .product-title
 {
-	background: url('images/deal_box_hr.gif') no-repeat 100% 0;
+    margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-size:12px;
+	left:2px;
+    top:1px;
+    position:absolute;
+    display: block;  
+    color:#C6C6C8;     
+}
+.featured-product-grid .product-item .product-title a
+{	
 	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+.featured-product-grid .product-item-main .product-title
+{
+    	display: block;
 	height: 2em;
 	line-height: 1.3em;
 	overflow: hidden hidden;
@@ -2618,10 +2666,20 @@ ul.languagelist li .selected
 
 .featured-product-grid .product-item .picture
 {
-	text-align: center;
-	margin-top: 10px;
+    height: 80%;
+    padding-top: 38px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
 }
-
+.featured-product-grid .product-item-main .picture
+{
+    height: 80%;
+    padding-top: 38px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
 .featured-product-grid .product-item .description
 {
 	margin: 5px 5px 0 5px;
@@ -2637,19 +2695,30 @@ ul.languagelist li .selected
 	vertical-align: bottom;
 	text-align: right;
 	width: 250px;
-	height: 85px;
+	height: 16px;
 	position: relative;
 }
 
-.featured-product-grid .product-item .add-info .prices
+.featured-product-grid .product-item .prices
 {
 	text-align: right;
 	vertical-align: middle;
 	position: absolute;
-	bottom: 15px;
-	right: 10px;
+	top: 10px;
+	left: 2px;
+	color:Red;
+	font-weight:bold;
 }
-
+.featured-product-grid .product-item-main .prices
+{
+    text-align: right;
+	vertical-align: middle;
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	color:Red;
+	font-weight:bold;
+}
 .featured-product-grid .product-item .add-info .buttons
 {
 	vertical-align: middle;
@@ -2659,17 +2728,26 @@ ul.languagelist li .selected
 	text-align: left;
 }
 
-.featured-product-grid .product-item .add-info .prices .productPrice
+.featured-product-grid .product-item  .prices .productPrice
 {
 	color: green;
 }
 
-.featured-product-grid .product-item .add-info .prices .oldproductPrice
+.featured-product-grid .product-item  .prices .oldproductPrice
 {
 	color: Red;
 	text-decoration: line-through;
 }
-
+.featured-product-grid .htmlcontent-body
+{
+     background-image: url("images/Savyboat/Backgroundslogangiuapagecategory.png");
+    background-repeat: repeat-x;
+    font-size: 1.8em;
+    height: 39px;
+    text-align: center;    
+    width: 100% !important;
+    color:White;    
+}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
 
 	PAGES
