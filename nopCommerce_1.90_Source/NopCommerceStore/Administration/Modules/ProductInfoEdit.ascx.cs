@@ -57,6 +57,8 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 this.txtName.Text = product.Name;
                 this.txtShortDescription.Text = product.ShortDescription;
                 this.txtFullDescription.Value = product.FullDescription;
+                this.txtShippingAndTerms.Value = product.ShippingAndTerms;
+                this.txtHistory.Value = product.History;
                 this.txtAdminComment.Text = product.AdminComment;
                 CommonHelper.SelectListItem(this.ddlTemplate, product.TemplateId);
                 this.cbShowOnHomePage.Checked = product.ShowOnHomePage;
@@ -144,6 +146,8 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 product.Name = txtName.Text;
                 product.ShortDescription = txtShortDescription.Text;
                 product.FullDescription = txtFullDescription.Value;
+                product.ShippingAndTerms = txtShippingAndTerms.Value;
+                product.History = txtHistory.Value;
                 product.AdminComment = txtAdminComment.Text;
                 product.TemplateId = int.Parse(this.ddlTemplate.SelectedItem.Value);
                 product.ShowOnHomePage = cbShowOnHomePage.Checked;
@@ -223,13 +227,16 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                     var txtLocalizedName = (TextBox)item.FindControl("txtLocalizedName");
                     var txtLocalizedShortDescription = (TextBox)item.FindControl("txtLocalizedShortDescription");
                     var txtLocalizedFullDescription = (FCKeditor)item.FindControl("txtLocalizedFullDescription");
+                    var txtLocalizedShippingandTerms = (FCKeditor)item.FindControl("txtLocalizedShippingandTerms");
+                    var txtLocalizedHistory = (FCKeditor)item.FindControl("txtLocalizedHistory");
                     var lblLanguageId = (Label)item.FindControl("lblLanguageId");
 
                     int languageId = int.Parse(lblLanguageId.Text);
                     string name = txtLocalizedName.Text;
                     string shortDescription = txtLocalizedShortDescription.Text;
                     string fullDescription = txtLocalizedFullDescription.Value;
-
+                    string shippingandterms = txtLocalizedShippingandTerms.Value;
+                    string history = txtLocalizedHistory.Value;
                     bool allFieldsAreEmpty = (string.IsNullOrEmpty(name) &&
                         string.IsNullOrEmpty(shortDescription) &&
                         string.IsNullOrEmpty(fullDescription));
@@ -246,7 +253,9 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                                 LanguageId = languageId,
                                 Name = name,
                                 ShortDescription = shortDescription,
-                                FullDescription = fullDescription
+                                FullDescription = fullDescription,                                
+                                ShippingAndTerms = shippingandterms,
+                                History = history
                             };
                             this.ProductService.InsertProductLocalized(content);
                         }

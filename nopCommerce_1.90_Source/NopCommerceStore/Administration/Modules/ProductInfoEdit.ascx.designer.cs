@@ -76,6 +76,42 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules {
         protected global::FredCK.FCKeditorV2.FCKeditor txtFullDescription;
         
         /// <summary>
+        /// lblShippingAndTerms control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Administration.Modules.ToolTipLabelControl lblShippingAndTerms;
+        
+        /// <summary>
+        /// txtShippingAndTerms control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::FredCK.FCKeditorV2.FCKeditor txtShippingAndTerms;
+        
+        /// <summary>
+        /// lblHistory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Administration.Modules.ToolTipLabelControl lblHistory;
+        
+        /// <summary>
+        /// txtHistory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::FredCK.FCKeditorV2.FCKeditor txtHistory;
+        
+        /// <summary>
         /// rptrLanguageDivs control.
         /// </summary>
         /// <remarks>

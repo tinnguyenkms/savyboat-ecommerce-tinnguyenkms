@@ -51,7 +51,27 @@
                 </td>
                 <td class="adminData">
                     <FCKeditorV2:FCKeditor ID="txtFullDescription" runat="server" AutoDetectLanguage="false"
-                        Height="350" Width="800px" />
+                        Height="250" Width="800px" />
+                </td>
+            </tr>
+                        <tr>
+                <td class="adminTitle">
+                    <nopCommerce:ToolTipLabel runat="server" ID="lblShippingAndTerms" Text="Shipping and Terms"
+                        ToolTip="<% $NopResources: Admin.ProductInfo.FullDescription.Tooltip%>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+                </td>
+                <td class="adminData">
+                    <FCKeditorV2:FCKeditor ID="txtShippingAndTerms" runat="server" AutoDetectLanguage="false"
+                        Height="250" Width="800px" />
+                </td>
+            </tr>
+                        <tr>
+                <td class="adminTitle">
+                    <nopCommerce:ToolTipLabel runat="server" ID="lblHistory" Text="History"
+                        ToolTip="<% $NopResources: Admin.ProductInfo.FullDescription.Tooltip%>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+                </td>
+                <td class="adminData">
+                    <FCKeditorV2:FCKeditor ID="txtHistory" runat="server" AutoDetectLanguage="false"
+                        Height="250" Width="800px" />
                 </td>
             </tr>
         </table>
@@ -91,6 +111,26 @@
                         </td>
                         <td class="adminData">
                             <FCKeditorV2:FCKeditor ID="txtLocalizedFullDescription" runat="server" AutoDetectLanguage="false"
+                                Height="350" Width="800px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="adminTitle">
+                            <nopCommerce:ToolTipLabel runat="server" ID="ToolTipLabel1" Text="Shipping and Terms"
+                                ToolTip="<% $NopResources: Admin.ProductInfo.FullDescription.Tooltip%>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+                        </td>
+                        <td class="adminData">
+                            <FCKeditorV2:FCKeditor ID="txtLocalizedShippingandTerms" runat="server" AutoDetectLanguage="false"
+                                Height="350" Width="800px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="adminTitle">
+                            <nopCommerce:ToolTipLabel runat="server" ID="ToolTipLabel2" Text="History"
+                                ToolTip="<% $NopResources: Admin.ProductInfo.FullDescription.Tooltip%>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+                        </td>
+                        <td class="adminData">
+                            <FCKeditorV2:FCKeditor ID="txtLocalizedHistory" runat="server" AutoDetectLanguage="false"
                                 Height="350" Width="800px" />
                         </td>
                     </tr>
