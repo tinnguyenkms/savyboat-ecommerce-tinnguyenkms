@@ -522,9 +522,6 @@ D:\Working\Savyboat\NopCommerceStore\bin\Nop.Tax.StrikeIron.pdb
 D:\Working\Savyboat\NopCommerceStore\obj\Debug\NopCommerceStore.csprojResolveAssemblyReference.cache
 D:\Working\Savyboat\NopCommerceStore\obj\Debug\NopCommerceStore.dll
 D:\Working\Savyboat\NopCommerceStore\obj\Debug\NopCommerceStore.pdb
-D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\obj\Debug\ResolveAssemblyReference.cache
-D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\obj\Debug\NopCommerceStore.dll
-D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\obj\Debug\NopCommerceStore.pdb
 D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\bin\NopCommerceStore.dll
 D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\bin\NopCommerceStore.pdb
 D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\bin\AjaxControlToolkit.dll
@@ -653,3 +650,6 @@ D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\bin\Nop.Tax.FixedRa
 D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\bin\Nop.Tax.FreeTaxProvider.pdb
 D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\bin\Nop.Tax.GeneralTaxProvider.pdb
 D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\bin\Nop.Tax.StrikeIron.pdb
+D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\obj\Debug\NopCommerceStore.dll
+D:\Working\SavyBoat\nopCommerce_1.90_Source\NopCommerceStore\obj\Debug\NopCommerceStore.pdb
