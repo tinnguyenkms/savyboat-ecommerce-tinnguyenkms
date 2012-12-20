@@ -115,7 +115,7 @@ namespace NopSolutions.NopCommerce.Web.Templates.Categories
 
             //page size
             int totalRecords = 0;
-            int pageSize = 10;
+            int pageSize = 16;
             if (category.PageSize > 0)
             {
                 pageSize = category.PageSize;

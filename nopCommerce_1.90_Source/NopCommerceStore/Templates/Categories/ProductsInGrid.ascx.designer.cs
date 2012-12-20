@@ -94,6 +94,24 @@ namespace NopSolutions.NopCommerce.Web.Templates.Categories {
         protected global::System.Web.UI.WebControls.DropDownList ddlSorting;
         
         /// <summary>
+        /// productsPager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Controls.Pager productsPager;
+        
+        /// <summary>
+        /// dlProducts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList dlProducts;
+        
+        /// <summary>
         /// pnlFilters control.
         /// </summary>
         /// <remarks>
@@ -128,23 +146,5 @@ namespace NopSolutions.NopCommerce.Web.Templates.Categories {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NopSolutions.NopCommerce.Web.Modules.ProductSpecificationFilterControl ctrlProductSpecificationFilter;
-        
-        /// <summary>
-        /// dlProducts control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList dlProducts;
-        
-        /// <summary>
-        /// productsPager control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NopSolutions.NopCommerce.Controls.Pager productsPager;
     }
 }

@@ -48,7 +48,7 @@
     <div class="clear">
     </div>
     <asp:Panel runat="server" ID="pnlFeaturedProducts" class="featured-product-grid">
-        <div style="float:left; width:65%">
+        <div style="float:left; width:67%">
             <div>
              <asp:DataList ID="dlFeaturedProductsmain" runat="server" RepeatColumns="1" RepeatDirection="Vertical"
                 RepeatLayout="Flow" ItemStyle-CssClass="item-box">
@@ -82,6 +82,25 @@
     </asp:Panel>
     <div class="clear">
     </div>
+    <div class="product-pager">
+        <nopCommerce:Pager runat="server" ID="productsPager" FirstButtonText="<% $NopResources:Pager.First %>"
+            LastButtonText="<% $NopResources:Pager.Last %>" NextButtonText="<% $NopResources:Pager.Next %>"
+            PreviousButtonText="<% $NopResources:Pager.Previous %>" CurrentPageText="Pager.CurrentPage" />
+    </div>
+    <div class="clear">
+    </div>
+    <div class="product-grid">
+        <asp:DataList ID="dlProducts" runat="server" RepeatColumns="4" RepeatDirection="Horizontal"
+            RepeatLayout="Table" ItemStyle-CssClass="item-box">
+            <ItemTemplate>
+                <nopCommerce:ProductBox1 ID="ctrlProductBox" Product='<%# Container.DataItem %>' ProductImageSize="160"
+                    runat="server" />
+            </ItemTemplate>
+        </asp:DataList>
+    </div>
+    <div class="clear">
+    </div>
+    
     <asp:Panel runat="server" ID="pnlFilters" CssClass="product-filters">
         <div class="filter-title">
             <asp:Label runat="server" ID="lblProductFilterTitle">
@@ -96,21 +115,5 @@
         </div>
     </asp:Panel>
     <div class="clear">
-    </div>
-    <div class="product-grid">
-        <asp:DataList ID="dlProducts" runat="server" RepeatColumns="2" RepeatDirection="Horizontal"
-            RepeatLayout="Table" ItemStyle-CssClass="item-box">
-            <ItemTemplate>
-                <nopCommerce:ProductBox1 ID="ctrlProductBox" Product='<%# Container.DataItem %>'
-                    runat="server" />
-            </ItemTemplate>
-        </asp:DataList>
-    </div>
-    <div class="clear">
-    </div>
-    <div class="product-pager">
-        <nopCommerce:Pager runat="server" ID="productsPager" FirstButtonText="<% $NopResources:Pager.First %>"
-            LastButtonText="<% $NopResources:Pager.Last %>" NextButtonText="<% $NopResources:Pager.Next %>"
-            PreviousButtonText="<% $NopResources:Pager.Previous %>" CurrentPageText="Pager.CurrentPage" />
     </div>
 </div>
