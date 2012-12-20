@@ -50,6 +50,15 @@ namespace NopSolutions.NopCommerce.BusinessLogic.Products
         /// Gets or sets the full description
         /// </summary>
         public string FullDescription { get; set; }
+        /// <summary>
+        /// Gets or sets the Shipping And Terms
+        /// </summary>
+        public string ShippingAndTerms { get; set; }
+
+        /// <summary>
+        /// Gets or sets the history
+        /// </summary>
+        public string History { get; set; }
 
         /// <summary>
         /// Gets or sets the meta keywords

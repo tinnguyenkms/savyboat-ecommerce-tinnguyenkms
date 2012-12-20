@@ -454,6 +454,8 @@ namespace NopSolutions.NopCommerce.BusinessLogic.Products
             product.Name = CommonHelper.EnsureMaximumLength(product.Name, 400);
             product.ShortDescription = CommonHelper.EnsureNotNull(product.ShortDescription);
             product.FullDescription = CommonHelper.EnsureNotNull(product.FullDescription);
+            product.ShippingAndTerms = CommonHelper.EnsureNotNull(product.ShippingAndTerms);
+            product.History = CommonHelper.EnsureNotNull(product.History);
             product.AdminComment = CommonHelper.EnsureNotNull(product.AdminComment);
             product.MetaKeywords = CommonHelper.EnsureNotNull(product.MetaKeywords);
             product.MetaKeywords = CommonHelper.EnsureMaximumLength(product.MetaKeywords, 400);
@@ -504,7 +506,8 @@ namespace NopSolutions.NopCommerce.BusinessLogic.Products
             product.MetaTitle = CommonHelper.EnsureMaximumLength(product.MetaTitle, 400);
             product.SEName = CommonHelper.EnsureNotNull(product.SEName);
             product.SEName = CommonHelper.EnsureMaximumLength(product.SEName, 100);
-
+            product.ShippingAndTerms = CommonHelper.EnsureNotNull(product.ShippingAndTerms);
+            product.History = CommonHelper.EnsureNotNull(product.History);
             
             if (!_context.IsAttached(product))
                 _context.Products.Attach(product);
@@ -594,6 +597,8 @@ namespace NopSolutions.NopCommerce.BusinessLogic.Products
             productLocalized.Name = CommonHelper.EnsureMaximumLength(productLocalized.Name, 400);
             productLocalized.ShortDescription = CommonHelper.EnsureNotNull(productLocalized.ShortDescription);
             productLocalized.FullDescription = CommonHelper.EnsureNotNull(productLocalized.FullDescription);
+            productLocalized.ShippingAndTerms = CommonHelper.EnsureNotNull(productLocalized.ShippingAndTerms);
+            productLocalized.History = CommonHelper.EnsureNotNull(productLocalized.History);
             productLocalized.MetaKeywords = CommonHelper.EnsureNotNull(productLocalized.MetaKeywords);
             productLocalized.MetaKeywords = CommonHelper.EnsureMaximumLength(productLocalized.MetaKeywords, 400);
             productLocalized.MetaDescription = CommonHelper.EnsureNotNull(productLocalized.MetaDescription);
@@ -638,7 +643,8 @@ namespace NopSolutions.NopCommerce.BusinessLogic.Products
             productLocalized.MetaTitle = CommonHelper.EnsureMaximumLength(productLocalized.MetaTitle, 400);
             productLocalized.SEName = CommonHelper.EnsureNotNull(productLocalized.SEName);
             productLocalized.SEName = CommonHelper.EnsureMaximumLength(productLocalized.SEName, 100);
-
+            productLocalized.ShippingAndTerms = CommonHelper.EnsureNotNull(productLocalized.ShippingAndTerms);
+            productLocalized.History = CommonHelper.EnsureNotNull(productLocalized.History);
             bool allFieldsAreEmpty = string.IsNullOrEmpty(productLocalized.Name) &&
                string.IsNullOrEmpty(productLocalized.ShortDescription) &&
                string.IsNullOrEmpty(productLocalized.FullDescription) &&

@@ -55,6 +55,15 @@ namespace NopSolutions.NopCommerce.BusinessLogic.Products
         /// Gets or sets the full description
         /// </summary>
         public string FullDescription { get; set; }
+        /// <summary>
+        /// Gets or sets the Shipping And Terms
+        /// </summary>
+        public string ShippingAndTerms { get; set; }
+
+        /// <summary>
+        /// Gets or sets the History
+        /// </summary>
+        public string History { get; set; }
 
         /// <summary>
         /// Gets or sets the admin comment
@@ -235,6 +244,76 @@ namespace NopSolutions.NopCommerce.BusinessLogic.Products
                 return GetLocalizedFullDescription(NopContext.Current.WorkingLanguage.LanguageId);
             }
         }
+
+        /// <summary>
+        /// Gets the localized Shipping And Terms
+        /// </summary>
+        public string LocalizedShippingAndTerms
+        {
+            get
+            {
+                return GetLocalizedShippingAndTerms(NopContext.Current.WorkingLanguage.LanguageId);
+            }
+        }
+
+        /// <summary>
+        /// Gets the localized full description 
+        /// </summary>
+        /// <param name="languageId">Language identifier</param>
+        /// <returns>Localized full description</returns>
+        public string GetLocalizedShippingAndTerms(int languageId)
+        {
+            if (NopContext.Current.LocalizedEntityPropertiesEnabled)
+            {
+                if (languageId > 0)
+                {
+                    if (_productLocalized == null)
+                        _productLocalized = IoC.Resolve<IProductService>().GetProductLocalizedByProductId(this.ProductId);
+
+                    var temp1 = _productLocalized.FirstOrDefault(cl => cl.LanguageId == languageId);
+                    if (temp1 != null && !String.IsNullOrWhiteSpace(temp1.ShippingAndTerms))
+                        return temp1.ShippingAndTerms;
+                }
+            }
+
+            return this.ShippingAndTerms;
+        }
+
+
+        /// <summary>
+        /// Gets the localized History
+        /// </summary>
+        public string LocalizedHistory
+        {
+            get
+            {
+                return GetLocalizedHistory(NopContext.Current.WorkingLanguage.LanguageId);
+            }
+        }
+
+        /// <summary>
+        /// Gets the localized full description 
+        /// </summary>
+        /// <param name="languageId">Language identifier</param>
+        /// <returns>Localized full description</returns>
+        public string GetLocalizedHistory(int languageId)
+        {
+            if (NopContext.Current.LocalizedEntityPropertiesEnabled)
+            {
+                if (languageId > 0)
+                {
+                    if (_productLocalized == null)
+                        _productLocalized = IoC.Resolve<IProductService>().GetProductLocalizedByProductId(this.ProductId);
+
+                    var temp1 = _productLocalized.FirstOrDefault(cl => cl.LanguageId == languageId);
+                    if (temp1 != null && !String.IsNullOrWhiteSpace(temp1.History))
+                        return temp1.History;
+                }
+            }
+
+            return this.History;
+        }
+
 
         /// <summary>
         /// Gets the localized meta keywords

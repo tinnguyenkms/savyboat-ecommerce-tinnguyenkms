@@ -5,3 +5,10 @@ D:\Working\nopCommerce_1.90_Source\Libraries\Nop.Controls\bin\Debug\Nop.Common.p
 D:\Working\nopCommerce_1.90_Source\Libraries\Nop.Controls\obj\Debug\ResolveAssemblyReference.cache
 D:\Working\nopCommerce_1.90_Source\Libraries\Nop.Controls\obj\Debug\Nop.Controls.dll
 D:\Working\nopCommerce_1.90_Source\Libraries\Nop.Controls\obj\Debug\Nop.Controls.pdb
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Controls\bin\Debug\Nop.Controls.dll
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Controls\bin\Debug\Nop.Controls.pdb
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Controls\bin\Debug\Nop.Common.dll
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Controls\bin\Debug\Nop.Common.pdb
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Controls\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Controls\obj\Debug\Nop.Controls.dll
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Controls\obj\Debug\Nop.Controls.pdb

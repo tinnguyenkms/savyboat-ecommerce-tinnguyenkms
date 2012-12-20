@@ -3,3 +3,8 @@ D:\Working\nopCommerce_1.90_Source\Libraries\Nop.Common\bin\Debug\Nop.Common.pdb
 D:\Working\nopCommerce_1.90_Source\Libraries\Nop.Common\obj\Debug\ResolveAssemblyReference.cache
 D:\Working\nopCommerce_1.90_Source\Libraries\Nop.Common\obj\Debug\Nop.Common.dll
 D:\Working\nopCommerce_1.90_Source\Libraries\Nop.Common\obj\Debug\Nop.Common.pdb
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Common\bin\Debug\Nop.Common.dll
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Common\bin\Debug\Nop.Common.pdb
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Common\obj\Debug\Nop.Common.dll
+D:\Working\SavyBoat\nopCommerce_1.90_Source\Libraries\Nop.Common\obj\Debug\Nop.Common.pdb
