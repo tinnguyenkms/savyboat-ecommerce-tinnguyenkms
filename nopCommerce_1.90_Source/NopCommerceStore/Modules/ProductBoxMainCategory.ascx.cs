@@ -60,9 +60,15 @@ namespace NopSolutions.NopCommerce.Web.Modules
                 hlProduct.Text = Server.HtmlEncode(product.LocalizedName);
 
                 var picture = product.DefaultPicture;
+                var pictures = this.PictureService.GetPicturesByProductId(product.ProductId);
                 if (picture != null)
                 {
-                    hlImageLink.ImageUrl = this.PictureService.GetPictureUrl(picture, this.ProductImageSize, true);
+                    if(pictures.Count>1)
+                    hlImageLink.ImageUrl = this.PictureService.GetPictureUrl(pictures[0], this.SettingManager.GetSettingValueInteger("Media.Product.DetailImageSize", 400));
+                    else if(pictures.Count==1)
+                        hlImageLink.ImageUrl = this.PictureService.GetPictureUrl(pictures[0], this.SettingManager.GetSettingValueInteger("Media.Product.DetailImageSize", 400));
+                    else
+                        hlImageLink.ImageUrl = this.PictureService.GetDefaultPictureUrl(this.SettingManager.GetSettingValueInteger("Media.Product.DetailImageSize", 400));
                     hlImageLink.ToolTip = String.Format(GetLocaleResourceString("Media.Product.ImageLinkTitleFormat"), product.LocalizedName);
                     hlImageLink.Text = String.Format(GetLocaleResourceString("Media.Product.ImageAlternateTextFormat"), product.LocalizedName);
                 }
