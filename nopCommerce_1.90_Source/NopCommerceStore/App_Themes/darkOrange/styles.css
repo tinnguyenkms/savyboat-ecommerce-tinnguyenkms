@@ -2362,7 +2362,7 @@ ul.languagelist li .selected
 	margin-bottom: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 520px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -2377,21 +2377,20 @@ ul.languagelist li .selected
 {
 	text-align: center;
 	margin: 10px 5px 10px 5px;
-	width: 250px;
-	background: url('images/prod_grid_box_bg.gif') no-repeat 0 100%;
+	width: 188px;	
 }
 
 .product-grid .product-item .product-title
 {
-	font-weight: bold;
-	font-size: 12px;
-	background: url('images/deal_box_hl.gif') no-repeat 0 0;
-	padding-left: 10px;
+     display: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+    position: absolute;
 }
 
 .product-grid .product-item .product-title a
-{
-	background: url('images/deal_box_hr.gif') no-repeat 100% 0;
+{	
 	display: block;
 	height: 2em;
 	line-height: 1.3em;
@@ -2419,18 +2418,21 @@ ul.languagelist li .selected
 {
 	vertical-align: bottom;
 	text-align: right;
-	width: 250px;
-	height: 85px;
-	position: relative;
+	width: 100px;
+	height: 15px;
+	position:absolute;
+	display:inline;
 }
 
-.product-grid .product-item .add-info .prices
+.product-grid .product-item .prices
 {
-	text-align: right;
+	text-align:left;
 	vertical-align: middle;
-	position: absolute;
+	position:inherit;
 	bottom: 15px;
 	right: 10px;
+	padding-left: 10px;
+	padding-top:18px;
 }
 
 .product-grid .product-item .add-info .buttons
@@ -2442,14 +2444,14 @@ ul.languagelist li .selected
 	text-align: left;
 }
 
-.product-grid .product-item .add-info .prices .productPrice
+.product-grid .product-item .prices .productPrice
 {
-	color: green;
+	color:Red;
 }
 
-.product-grid .product-item .add-info .prices .oldproductPrice
+.product-grid .product-item .prices .oldproductPrice
 {
-	color: Red;
+	color:Green;
 	text-decoration: line-through;
 }
 
@@ -2608,7 +2610,7 @@ ul.languagelist li .selected
 {
 	text-align: center;	
 	width: 530px;
-	height: 400px;
+	height: 355px;
     -webkit-border-radius: 1px;
     border-radius: 1px;
     border-color:#C6C6C8;
@@ -2619,6 +2621,7 @@ ul.languagelist li .selected
     position:relative;
     display: block;           
     background-position:right top;
+    background-size:100px;
 }
 
 .featured-product-grid .product-item .product-title
@@ -2657,7 +2660,7 @@ ul.languagelist li .selected
 }
 .featured-product-grid .product-item-main .product-title
 {
-    	display: block;
+    display: block;
 	height: 2em;
 	line-height: 1.3em;
 	overflow: hidden hidden;
@@ -2674,8 +2677,8 @@ ul.languagelist li .selected
 }
 .featured-product-grid .product-item-main .picture
 {
-    height: 80%;
-    padding-top: 38px;
+    height: 60%;
+    padding-top: 50px;
     text-align: center;
     vertical-align: middle;
     width: 100%;
@@ -2689,7 +2692,16 @@ ul.languagelist li .selected
 	color: #555;
 	height: 50px;
 }
-
+.featured-product-grid .product-item-main .add-info
+{
+    vertical-align: bottom;
+	text-align: justify;
+	width: 100%;
+	height: 47px;
+	position:absolute;
+	padding-left:6px;
+	bottom:2px;
+}
 .featured-product-grid .product-item .add-info
 {
 	vertical-align: bottom;
@@ -2704,9 +2716,8 @@ ul.languagelist li .selected
 	text-align: right;
 	vertical-align: middle;
 	position: absolute;
-	top: 10px;
-	left: 2px;
-	color:Red;
+	top: 22px;
+	left: 2px;	
 	font-weight:bold;
 }
 .featured-product-grid .product-item-main .prices
@@ -2714,9 +2725,8 @@ ul.languagelist li .selected
     text-align: right;
 	vertical-align: middle;
 	position: absolute;
-	top: 10px;
-	left: 2px;
-	color:Red;
+	top: 22px;
+	left: 2px;	
 	font-weight:bold;
 }
 .featured-product-grid .product-item .add-info .buttons
@@ -2730,12 +2740,22 @@ ul.languagelist li .selected
 
 .featured-product-grid .product-item  .prices .productPrice
 {
-	color: green;
+	color:Red;
 }
 
 .featured-product-grid .product-item  .prices .oldproductPrice
 {
-	color: Red;
+	color:Green;
+	text-decoration: line-through;
+}
+.featured-product-grid .product-item-main  .prices .productPrice
+{
+	color:Red;
+}
+
+.featured-product-grid .product-item-main  .prices .oldproductPrice
+{
+	color:Green;
 	text-decoration: line-through;
 }
 .featured-product-grid .htmlcontent-body
@@ -2848,8 +2868,9 @@ ul.languagelist li .selected
 
 .product-sorting
 {
-	width: 520px;
-	margin: 0px auto 10px auto;
+	width: 100%;
+	text-align:right;	
+	margin-bottom:10px;
 }
 
 .product-filters
