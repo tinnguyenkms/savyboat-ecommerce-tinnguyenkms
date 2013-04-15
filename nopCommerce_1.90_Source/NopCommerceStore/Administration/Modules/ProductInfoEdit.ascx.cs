@@ -62,7 +62,7 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 this.txtAdminComment.Text = product.AdminComment;
                 CommonHelper.SelectListItem(this.ddlTemplate, product.TemplateId);
                 this.cbShowOnHomePage.Checked = product.ShowOnHomePage;
-
+                this.cbIsbestseller.Checked = product.IsbestSeller;
                 this.cbAllowCustomerReviews.Checked = product.AllowCustomerReviews;
                 this.cbAllowCustomerRatings.Checked = product.AllowCustomerRatings;
                 this.cbPublished.Checked = product.Published;
@@ -151,6 +151,7 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 product.AdminComment = txtAdminComment.Text;
                 product.TemplateId = int.Parse(this.ddlTemplate.SelectedItem.Value);
                 product.ShowOnHomePage = cbShowOnHomePage.Checked;
+                product.IsbestSeller = cbIsbestseller.Checked;
                 product.AllowCustomerReviews = cbAllowCustomerReviews.Checked;
                 product.AllowCustomerRatings = cbAllowCustomerRatings.Checked;
                 product.Published = cbPublished.Checked;
@@ -253,7 +254,7 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                                 LanguageId = languageId,
                                 Name = name,
                                 ShortDescription = shortDescription,
-                                FullDescription = fullDescription,                                
+                                FullDescription = fullDescription,                              
                                 ShippingAndTerms = shippingandterms,
                                 History = history
                             };
@@ -268,6 +269,8 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                             content.Name = name;
                             content.ShortDescription = shortDescription;
                             content.FullDescription = fullDescription;
+                            content.History = history;
+                            content.ShippingAndTerms = shippingandterms;
                             this.ProductService.UpdateProductLocalized(content);
                         }
                     }
@@ -282,6 +285,8 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 var txtLocalizedName = (TextBox)e.Item.FindControl("txtLocalizedName");
                 var txtLocalizedShortDescription = (TextBox)e.Item.FindControl("txtLocalizedShortDescription");
                 var txtLocalizedFullDescription = (FCKeditor)e.Item.FindControl("txtLocalizedFullDescription");
+                var txtLocalizedHistory = (FCKeditor)e.Item.FindControl("txtLocalizedHistory");
+                var txtLocalizedShippingAndTerm = (FCKeditor)e.Item.FindControl("txtLocalizedShippingandTerms");
                 var lblLanguageId = (Label)e.Item.FindControl("lblLanguageId");
 
                 int languageId = int.Parse(lblLanguageId.Text);
@@ -292,6 +297,8 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                     txtLocalizedName.Text = content.Name;
                     txtLocalizedShortDescription.Text = content.ShortDescription;
                     txtLocalizedFullDescription.Value = content.FullDescription;
+                    txtLocalizedHistory.Value = content.History;
+                    txtLocalizedShippingAndTerm.Value = content.ShippingAndTerms;
                 }
             }
         }

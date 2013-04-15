@@ -17,7 +17,7 @@
 <%@ Register TagPrefix="nopCommerce" TagName="TierPrices" Src="~/Modules/TierPrices.ascx" %>
 <%@ Register TagPrefix="nopCommerce" TagName="ProductTags" Src="~/Modules/ProductTags.ascx" %>
 <%@ Register TagPrefix="nopCommerce" TagName="ProductShareButton" Src="~/Modules/ProductShareButton.ascx" %>
-
+<%@ Register TagPrefix="nopCommerce" TagName="TopicHomePageControl" Src="~/Modules/TopicHomePage.ascx" %>
 <ajaxToolkit:ToolkitScriptManager runat="Server" EnableScriptGlobalization="true"
     EnableScriptLocalization="true" ID="sm1" ScriptMode="Release" CompositeScript-ScriptMode="Release" />
 <% if (this.SettingManager.GetSettingValueBoolean("Media.CategoryBreadcrumbEnabled"))
@@ -61,13 +61,17 @@
             </asp:ListView>
         </div>
         <div class="overview">
+            <div>
+                <nopCommerce:ProductShareButton ID="ctrlProductShareButton" runat="server" />
+            </div>
             <h1 class="productname">
                 <asp:Literal ID="lProductName" runat="server" />
             </h1>
+            <h3>
+                <%=GetLocaleResourceString("Products.Dimension")%><asp:Label ID="lblDimensions" runat="server"></asp:Label>
+            </h3>
+            <div style="width:100%; height:1px; background-color:#D5D5D5; margin-bottom:10px; margin-top:10px;"></div>
             <div class="clear">
-            </div>
-            <div class="shortdescription">
-                <asp:Literal ID="lShortDescription" runat="server" />
             </div>
             <asp:PlaceHolder runat="server" ID="phSKU">
                 <div class="clear">
@@ -76,6 +80,24 @@
                     <%=GetLocaleResourceString("Products.SKU")%> <asp:Literal runat="server" ID="lSKU" />
                 </div>
             </asp:PlaceHolder>
+            <asp:PlaceHolder runat="server" ID="phWeight">
+                <div class="clear">
+                </div>
+                <div class="sku">
+                    <%=GetLocaleResourceString("Products.Weight")%> <asp:Literal runat="server" ID="lWeight" />
+                </div>
+            </asp:PlaceHolder>
+             <asp:PlaceHolder runat="server" ID="phPackageSize">
+                <div class="clear">
+                </div>
+                <div class="sku">
+                    <%=GetLocaleResourceString("Products.PackageSize")%> <asp:Literal runat="server" ID="lPackageSize" />
+                </div>
+            </asp:PlaceHolder>
+            <div class="shortdescription">
+                <asp:Literal ID="lShortDescription" runat="server" />
+            </div>
+            
             <asp:PlaceHolder runat="server" ID="phManufacturerPartNumber">
                 <div class="clear">
                 </div>
@@ -100,26 +122,43 @@
             </asp:PlaceHolder>
             <div class="clear">
             </div>
+         
         <div class="clear">
         </div>
-            <div class="product-collateral">
-                <nopCommerce:ProductRating ID="ctrlProductRating" runat="server" />
+            <nopCommerce:ProductRating ID="ctrlProductRating" runat="server" />
                 <br />
+            <div class="product-collateral">
+            
+
                 <div class="one-variant-price">
-                    <nopCommerce:ProductPrice1 ID="ctrlProductPrice" runat="server" />
+                    <nopCommerce:ProductPrice1 ID="ctrlProductPrice" runat="server" visiblelable="false"  />
                     <nopCommerce:DecimalTextBox runat="server" ID="txtCustomerEnteredPrice" Value="1"
                         RequiredErrorMessage="<% $NopResources:Products.CustomerEnteredPrice.EnterPrice %>"
                         MinimumValue="0" MaximumValue="100000000" Width="100" />
-                </div>
-                <div class="add-info">
-                    <nopCommerce:NumericTextBox runat="server" ID="txtQuantity" Value="1" RequiredErrorMessage="<% $NopResources:Products.EnterQuantity %>"
+                    <br />    
+                    <br />
+                    <%=GetLocaleResourceString("Products.Quantity")%>&nbsp&nbsp&nbsp&nbsp<nopCommerce:NumericTextBox runat="server" ID="txtQuantity" Value="1" RequiredErrorMessage="<% $NopResources:Products.EnterQuantity %>"
                         RangeErrorMessage="<% $NopResources:Products.QuantityRange %>" MinimumValue="1"
-                        MaximumValue="999999" Width="50" />
-                    <asp:Button ID="btnAddToCart" runat="server" OnCommand="OnCommand" Text="<% $NopResources:Products.AddToCart %>"
-                        CommandName="AddToCart" CommandArgument='<%#Eval("ProductVariantId")%>' CssClass="productvariantaddtocartbutton" />
-                    <asp:Button ID="btnAddToWishlist" runat="server" OnCommand="OnCommand" Text="<% $NopResources:Wishlist.AddToWishlist %>"
-                        CommandName="AddToWishlist" CommandArgument='<%#Eval("ProductVariantId")%>' CssClass="productvariantaddtowishlistbutton" />
+                        MaximumValue="999999" Width="50" />                                      
+           
+                     
                 </div>
+            </div>
+            <div style=" text-align:center; margin-top:10px;">
+                <div>
+                   <asp:Panel ID="pnfreeshipping" runat="server">
+                            <asp:Label ID="lblFreeShipping" runat="server" CssClass="freeshipping"></asp:Label>
+                    </asp:Panel>
+                </div>
+                <div >
+                 <asp:Button ID="btnAddToCart" runat="server" OnCommand="OnCommand" Text="<% $NopResources:Products.Buynow %>"
+                        CommandName="AddToCart" CommandArgument='<%#Eval("ProductVariantId")%>' CssClass="productvariantaddtocartbutton" />
+                  
+                </div>
+                <div>
+                  <asp:Button ID="btnAddToWishlist" runat="server" OnCommand="OnCommand" Text="<% $NopResources:Wishlist.AddToWishlist %>"
+                        CommandName="AddToWishlist" CommandArgument='<%#Eval("ProductVariantId")%>' CssClass="productvariantaddtowishlistbutton" />
+                        </div>
                 <asp:Panel runat="server" ID="pnlDownloadSample" Visible="false" CssClass="one-variant-download-sample">
                     <span class="downloadsamplebutton">
                         <asp:HyperLink runat="server" ID="hlDownloadSample" Text="<% $NopResources:Products.DownloadSample %>" />
@@ -134,14 +173,23 @@
                 <nopCommerce:ProductAddToCompareList ID="ctrlProductAddToCompareList" runat="server" />
                 <div class="clear">
                 </div>
-                <nopCommerce:ProductShareButton ID="ctrlProductShareButton" runat="server" />
+                
+                
             </div>
+             <div style="text-align:right;">
+                  <img src="../../images/banner_left.jpg" alt="" />
+           </div>
         </div>
-    </div>
+       
+    
     <div class="clear">
     </div>
-    <div class="product-collateral">
-        <div class="product-variant-line">
+     <nopCommerce:TopicHomePageControl ID="ctrTopicHomePage" runat="server" TopicName="HomePageText"
+        OverrideSEO="false"></nopCommerce:TopicHomePageControl>
+    <div class="clear">
+    </div>
+    <div class="product-collateral1">
+        <div class="product-variant-line" runat="server" visible="false">
             <asp:Label runat="server" ID="lblError" EnableViewState="false" CssClass="error" />
             <div class="clear">
             </div>
@@ -159,17 +207,7 @@
             <div class="fulldescription">
                 <asp:Literal ID="lFullDescription" runat="server" />
             </div>
-        </div>
-        <div class="clear">
-        </div>
-        <div>
-            <nopCommerce:ProductsAlsoPurchased ID="ctrlProductsAlsoPurchased" runat="server" />
-        </div>
-        <div class="clear">
-        </div>
-        <div>
-            <nopCommerce:RelatedProducts ID="ctrlRelatedProducts" runat="server" />
-        </div>
+        </div>              
         <div class="clear">
         </div>
         <ajaxToolkit:TabContainer runat="server" ID="ProductsTabs" ActiveTabIndex="1" CssClass="grey">
@@ -189,5 +227,38 @@
                 </ContentTemplate>
             </ajaxToolkit:TabPanel>
         </ajaxToolkit:TabContainer>
+        <ajaxToolkit:TabContainer runat="server" ID="productinfotabs" ActiveTabIndex="0" CssClass="grey">
+                 <ajaxToolkit:TabPanel runat="server" ID="TabPanel1" HeaderText="Description">
+                    <ContentTemplate>
+                        <div class="product-review-box">
+                        <asp:Literal ID="ltdescription" runat="server"></asp:Literal>
+                        </div>
+                    </ContentTemplate>
+                 </ajaxToolkit:TabPanel>
+                  <ajaxToolkit:TabPanel runat="server" ID="TabPanel2" HeaderText="History">
+                    <ContentTemplate>
+                     <div class="product-review-box">
+                        <asp:Literal ID="ltHistory" runat="server"></asp:Literal>
+                         </div>
+                    </ContentTemplate>
+                 </ajaxToolkit:TabPanel>
+                  <ajaxToolkit:TabPanel runat="server" ID="TabPanel3" HeaderText="Shipping and Terms">
+                    <ContentTemplate>
+                         <div class="product-review-box">
+                        <asp:Literal ID="ltShippingandterms" runat="server"></asp:Literal>
+                        </div>
+                    </ContentTemplate>
+                 </ajaxToolkit:TabPanel>
+        </ajaxToolkit:TabContainer>
+         <div class="clear">
+        </div>
+        <div>
+            <nopCommerce:RelatedProducts ID="ctrlRelatedProducts" runat="server" />
+        </div>
+         <div class="clear">
+        </div>
+        <div>
+            <nopCommerce:ProductsAlsoPurchased ID="ctrlProductsAlsoPurchased" runat="server" />
+        </div>
     </div>
 </div>

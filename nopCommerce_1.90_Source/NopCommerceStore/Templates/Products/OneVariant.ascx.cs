@@ -46,8 +46,15 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products
         protected void BindProductInfo(Product product)
         {
             lProductName.Text = Server.HtmlEncode(product.LocalizedName);
+            ProductVariant itemproductvariant = new BusinessLogic.Products.ProductVariant();
+            itemproductvariant = product.ProductVariants.Last();
+            if (itemproductvariant != null)
+                lblDimensions.Text = string.Format("{0:0}''L x {1:0}''W x{2:0}''H", itemproductvariant.Length, itemproductvariant.Width, itemproductvariant.Height);
             lShortDescription.Text = product.LocalizedShortDescription;
             lFullDescription.Text = product.LocalizedFullDescription;
+            ltdescription.Text = product.LocalizedFullDescription;
+            ltHistory.Text = product.LocalizedHistory;
+            ltShippingandterms.Text = product.LocalizedShippingAndTerms;
             //manufacturers
             List<Manufacturer> manufacturers = new List<Manufacturer>();
             foreach (var pm in product.ProductManufacturers)
@@ -124,7 +131,12 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products
             {
                 phSKU.Visible = false;
             }
+            //weight
+           
+                
+                lWeight.Text = string.Format("{0:0.0}lb", productVariant.Weight);
 
+                lPackageSize.Text = string.Format("{0:0}''L x {1:0}''W x{2:0}''H", productVariant.PLength, productVariant.PWidth, productVariant.PHeight);
             //manufacturer part number
             if (this.SettingManager.GetSettingValueBoolean("Display.Products.ShowManufacturerPartNumber") &&
                 !String.IsNullOrEmpty(productVariant.ManufacturerPartNumber))
@@ -141,7 +153,13 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products
             ctrlProductAttributes.ProductVariantId = productVariant.ProductVariantId;
             ctrlGiftCardAttributes.ProductVariantId = productVariant.ProductVariantId;
             ctrlProductPrice.ProductVariantId = productVariant.ProductVariantId;
-
+            if (productVariant.IsFreeShipping)
+            {
+                pnfreeshipping.Visible = true;
+                lblFreeShipping.Text = this.GetLocaleResourceString("Products.FreeShipping");
+            }
+            else
+                pnfreeshipping.Visible = false;
             //stock
             string stockMessage = productVariant.FormatStockMessage();
             if (!String.IsNullOrEmpty(stockMessage))
@@ -226,7 +244,7 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products
             ProductsTabs.Visible = pnlProductReviews.Visible ||
                 pnlProductSpecs.Visible ||
                 pnlProductTags.Visible;
-
+            
             //little hack here
             if (pnlProductTags.Visible)
                 ProductsTabs.ActiveTab = pnlProductTags;
@@ -234,7 +252,7 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products
                 ProductsTabs.ActiveTab = pnlProductSpecs;
             if (pnlProductReviews.Visible)
                 ProductsTabs.ActiveTab = pnlProductReviews;
-
+            ProductsTabs.Visible = false;
             BindJQuery();
 
             string slimBox = CommonHelper.GetStoreLocation() + "Scripts/slimbox2.js";

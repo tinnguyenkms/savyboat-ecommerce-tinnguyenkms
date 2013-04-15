@@ -7,7 +7,7 @@
 <br />
 <asp:Label ID="lblCustomerEnterPrice" runat="server" Visible="false" />
 <asp:Label ID="lblPrice" runat="server" Visible="false" />
-<asp:Label ID="lblPriceValue" runat="server" CssClass="productPrice" />
+ <asp:Label ID="lblSale" runat="server" Visible="false" Text="<% $NopResources:Products.Sale %>"></asp:Label><asp:Label ID="lblPriceValue" runat="server" CssClass="productPrice" />
 <asp:PlaceHolder runat="server" ID="phDiscount">
     <br />
     <%=GetLocaleResourceString("Products.FinalPriceWithDiscount")%>&nbsp;&nbsp;

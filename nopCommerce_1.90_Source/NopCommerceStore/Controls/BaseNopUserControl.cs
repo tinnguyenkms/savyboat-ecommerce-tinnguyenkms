@@ -60,6 +60,7 @@ using NopSolutions.NopCommerce.BusinessLogic.Tax;
 using NopSolutions.NopCommerce.BusinessLogic.Templates;
 using NopSolutions.NopCommerce.BusinessLogic.Warehouses;
 using NopSolutions.NopCommerce.Common.Utils;
+using NopSolutions.NopCommerce.BusinessLogic.RotatorImages;
 
 namespace NopSolutions.NopCommerce.Web
 {
@@ -291,6 +292,10 @@ namespace NopSolutions.NopCommerce.Web
         public IWarehouseService WarehouseService
         {
             get { return IoC.Resolve<IWarehouseService>(); }
+        }
+        public IRotatorImageService RotatorImageService
+        {
+            get { return IoC.Resolve<IRotatorImageService>(); }
         }
         #endregion
     }

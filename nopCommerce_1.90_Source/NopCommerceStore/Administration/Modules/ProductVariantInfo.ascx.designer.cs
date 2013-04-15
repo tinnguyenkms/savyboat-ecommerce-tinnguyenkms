@@ -886,6 +886,60 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules {
         protected global::NopSolutions.NopCommerce.Web.Administration.Modules.DecimalTextBox txtHeight;
         
         /// <summary>
+        /// lblPLength control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Administration.Modules.ToolTipLabelControl lblPLength;
+        
+        /// <summary>
+        /// txtPLength control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Administration.Modules.DecimalTextBox txtPLength;
+        
+        /// <summary>
+        /// lblPWidth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Administration.Modules.ToolTipLabelControl lblPWidth;
+        
+        /// <summary>
+        /// txtPWidth control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Administration.Modules.DecimalTextBox txtPWidth;
+        
+        /// <summary>
+        /// lblPHeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Administration.Modules.ToolTipLabelControl lblPHeight;
+        
+        /// <summary>
+        /// txtPHeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Administration.Modules.DecimalTextBox txtPHeight;
+        
+        /// <summary>
         /// lblTaxExempt control.
         /// </summary>
         /// <remarks>

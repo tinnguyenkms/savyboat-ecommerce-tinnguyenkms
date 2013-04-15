@@ -176,6 +176,10 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 this.txtWidth.Value = productVariant.Width;
                 this.txtHeight.Value = productVariant.Height;
 
+                this.txtPHeight.Value = productVariant.PHeight;
+                this.txtPLength.Value = productVariant.PLength;
+                this.txtPWidth.Value = productVariant.PWidth;
+
                 //picture
                 Picture productVariantPicture = productVariant.Picture;
                 btnRemoveProductVariantImage.Visible = productVariantPicture != null;
@@ -345,6 +349,11 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
             decimal length = txtLength.Value;
             decimal width = txtWidth.Value;
             decimal height = txtHeight.Value;
+
+            decimal plength = txtPLength.Value;
+            decimal pwidth = txtPWidth.Value;
+            decimal pheight = txtPHeight.Value;
+
             DateTime? availableStartDateTime = ctrlAvailableStartDateTimePicker.SelectedDate;
             DateTime? availableEndDateTime = ctrlAvailableEndDateTimePicker.SelectedDate;
             if (availableStartDateTime.HasValue)
@@ -538,6 +547,12 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 productVariant.Length = length;
                 productVariant.Width = width;
                 productVariant.Height = height;
+
+                productVariant.PWidth = pwidth;
+                productVariant.PHeight = pheight;
+                productVariant.PLength = plength;
+
+
                 productVariant.PictureId = productVariantPictureId;
                 productVariant.AvailableStartDateTime = availableStartDateTime;
                 productVariant.AvailableEndDateTime = availableEndDateTime;
@@ -692,7 +707,10 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                         Deleted = false,
                         DisplayOrder = displayOrder,
                         CreatedOn = nowDT,
-                        UpdatedOn = nowDT
+                        UpdatedOn = nowDT,
+                        PLength = plength,
+                        PWidth = pwidth,
+                        PHeight = pheight
                     };
 
                     this.ProductService.InsertProductVariant(productVariant);

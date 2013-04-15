@@ -82,7 +82,8 @@ namespace NopSolutions.NopCommerce.Web.Modules
                         hlImageLink.NavigateUrl = productURL;
                         ibtnBuynow.CommandArgument = productURL;
                         hlImageLink.ToolTip = String.Format(GetLocaleResourceString("Media.Product.ImageLinkTitleFormat"), product.LocalizedName);
-                        hlImageLink.Text = String.Format(GetLocaleResourceString("Media.Product.ImageAlternateTextFormat"), product.LocalizedName);                       
+                        hlImageLink.Text = String.Format(GetLocaleResourceString("Media.Product.ImageAlternateTextFormat"), product.LocalizedName);
+                        if (product.ProductVariants.Count > 0)
                         ctrprice.ProductVariantId = product.ProductVariants[0].ProductVariantId;
                     }
 

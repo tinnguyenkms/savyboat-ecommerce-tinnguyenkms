@@ -47,6 +47,7 @@ namespace NopSolutions.NopCommerce.Web.Modules
             if (!Page.IsPostBack)
             {
                 BindData();
+                this.lblSale.Visible = visiblelable;
             }
         }
 
@@ -188,6 +189,21 @@ namespace NopSolutions.NopCommerce.Web.Modules
             set
             {
                 this.ViewState["ProductVariantId"] = value;
+            }
+        }
+        public bool visiblelable
+        {
+            get
+            {
+                object obj2 = this.ViewState["visiblelable"];
+                if (obj2 != null)
+                    return true;
+                else
+                    return false;
+            }
+            set
+            {
+                this.ViewState["visiblelable"] = value;
             }
         }
     }

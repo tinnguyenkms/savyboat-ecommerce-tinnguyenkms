@@ -707,7 +707,7 @@
             <nopCommerce:DecimalTextBox runat="server" CssClass="adminInput" ID="txtWeight" Value="0"
                 RequiredErrorMessage="<% $NopResources:Admin.ProductVariantInfo.Weight.RequiredErrorMessage %>"
                 MinimumValue="0" MaximumValue="999999" RangeErrorMessage="<% $NopResources:Admin.ProductVariantInfo.Weight.RangeErrorMessage %>">
-            </nopcommerce:decimaltextbox> [<%=this.MeasureService.BaseWeightIn.Name%>]
+            </nopcommerce:DecimalTextBox> [<%=this.MeasureService.BaseWeightIn.Name%>]
         </td>
     </tr>
     <tr id="pnlLength">
@@ -749,6 +749,47 @@
             [<%=this.MeasureService.BaseDimensionIn.Name%>]
         </td>
     </tr>
+
+     <tr id="pnlPLength">
+        <td class="adminTitle">
+            <nopCommerce:ToolTipLabel runat="server" ID="lblPLength" Text="<% $NopResources:Admin.ProductVariantInfo.PLength %>"
+                ToolTip="<% $NopResources:Admin.ProductVariantInfo.Length.ToolTip %>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+        </td>
+        <td class="adminData">
+            <nopCommerce:DecimalTextBox runat="server" CssClass="adminInput" ID="txtPLength" Value="0"
+                RequiredErrorMessage="<% $NopResources:Admin.ProductVariantInfo.Length.RequiredErrorMessage %>"
+                MinimumValue="0" MaximumValue="999999" RangeErrorMessage="<% $NopResources:Admin.ProductVariantInfo.Length.RangeErrorMessage %>">
+            </nopCommerce:DecimalTextBox>
+            [<%=this.MeasureService.BaseDimensionIn.Name%>]
+        </td>
+    </tr>
+    <tr id="pnlPWidth">
+        <td class="adminTitle">
+            <nopCommerce:ToolTipLabel runat="server" ID="lblPWidth" Text="<% $NopResources:Admin.ProductVariantInfo.PWidth %>"
+                ToolTip="<% $NopResources:Admin.ProductVariantInfo.Width.ToolTip %>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+        </td>
+        <td class="adminData">
+            <nopCommerce:DecimalTextBox runat="server" CssClass="adminInput" ID="txtPWidth" Value="0"
+                RequiredErrorMessage="<% $NopResources:Admin.ProductVariantInfo.Width.RequiredErrorMessage %>"
+                MinimumValue="0" MaximumValue="999999" RangeErrorMessage="<% $NopResources:Admin.ProductVariantInfo.Width.RangeErrorMessage %>">
+            </nopCommerce:DecimalTextBox>
+            [<%=this.MeasureService.BaseDimensionIn.Name%>]
+        </td>
+    </tr>
+    <tr id="pnlPHeight">
+        <td class="adminTitle">
+            <nopCommerce:ToolTipLabel runat="server" ID="lblPHeight" Text="<% $NopResources: Admin.ProductVariantInfo.PHeight%>"
+                ToolTip="<% $NopResources:Admin.ProductVariantInfo.Height.ToolTip %>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+        </td>
+        <td class="adminData">
+            <nopCommerce:DecimalTextBox runat="server" CssClass="adminInput" ID="txtPHeight" Value="0"
+                RequiredErrorMessage="<% $NopResources:Admin.ProductVariantInfo.Height.RequiredErrorMessage %>"
+                MinimumValue="0" MaximumValue="999999" RangeErrorMessage="<% $NopResources:Admin.ProductVariantInfo.Height.RangeErrorMessage %>">
+            </nopCommerce:DecimalTextBox>
+            [<%=this.MeasureService.BaseDimensionIn.Name%>]
+        </td>
+    </tr>
+
     <tr class="adminSeparator">
         <td colspan="2">
             <hr />

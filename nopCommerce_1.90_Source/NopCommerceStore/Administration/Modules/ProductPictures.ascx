@@ -32,7 +32,7 @@
                     <asp:Image ID="iProductPicture" runat="server" AlternateText="pic" />
                     <asp:HiddenField ID="hfProductPictureId" runat="server" Value='<%# Eval("ProductPictureId") %>' />
                 </ItemTemplate>
-            </asp:TemplateField>
+            </asp:TemplateField> 
             <asp:TemplateField HeaderText="<% $NopResources:Admin.ProductPictures.DisplayOrder %>"
                 HeaderStyle-HorizontalAlign="Center" ItemStyle-Width="15%" ItemStyle-HorizontalAlign="Center">
                 <ItemTemplate>

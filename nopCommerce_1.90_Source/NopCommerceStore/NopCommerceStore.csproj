@@ -407,6 +407,20 @@
     <Compile Include="Administration\BulkEditProducts.aspx.designer.cs">
       <DependentUpon>BulkEditProducts.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Administration\Modules\RotatorImageManager.ascx.cs">
+      <DependentUpon>RotatorImageManager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\Modules\RotatorImageManager.ascx.designer.cs">
+      <DependentUpon>RotatorImageManager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\RotatorImageManager.aspx.cs">
+      <DependentUpon>RotatorImageManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\RotatorImageManager.aspx.designer.cs">
+      <DependentUpon>RotatorImageManager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Administration\SystemInformation.aspx.cs">
       <DependentUpon>SystemInformation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -6006,6 +6020,8 @@
     <Content Include="Administration\CategoryTemplateAdd.aspx" />
     <Content Include="Administration\CategoryTemplateDetails.aspx" />
     <Content Include="Administration\CategoryTemplates.aspx" />
+    <Content Include="Administration\Modules\RotatorImageManager.ascx" />
+    <Content Include="Administration\RotatorImageManager.aspx" />
     <Content Include="Administration\SystemInformation.aspx" />
     <Content Include="Administration\Modules\CategoryACL.ascx" />
     <Content Include="Administration\Modules\SystemInformation.ascx" />
@@ -6176,11 +6192,13 @@
     <Content Include="App_Themes\darkOrange\images\Savyboat\background-slogangiuapage.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\background - top banner.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Backgroundslogangiuapagecategory.png" />
+    <Content Include="App_Themes\darkOrange\images\Savyboat\background_pricebox.jpg" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Best Seller.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\bg_noticered.png" />
-    <Content Include="App_Themes\darkOrange\images\Savyboat\Button - Buy Now.png" />
+    <Content Include="App_Themes\darkOrange\images\Savyboat\ButtonBuyNow1.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Button - Search.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Button - Sign Up.png" />
+    <Content Include="App_Themes\darkOrange\images\Savyboat\ButtonBuyNow10832.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\hotbuy-big.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\HotBuy.png" />
     <Content Include="App_Themes\darkOrange\images\Savyboat\Line Best Seller.png" />
@@ -6345,6 +6363,7 @@
     <None Include="Install\Scripts\1.80\nopCommerce_upgrade.sql" />
     <None Include="Install\Scripts\1.90\nopCommerce_upgrade.sql" />
     <Content Include="FAQs.aspx" />
+    <Content Include="images\banner_left.jpg" />
     <Content Include="images\dev7logo.png" />
     <Content Include="images\nemo.jpg" />
     <Content Include="images\slideshow\Ship_14.jpg" />

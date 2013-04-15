@@ -162,9 +162,12 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
             string name = txtName.Text.Trim();
             string shortDescription = txtShortDescription.Text.Trim();
             string fullDescription = txtFullDescription.Value.Trim();
+            string history = txtHistory.Value.Trim();
+            string shippingandterm = txtShippingAndTerms.Value.Trim();
             string adminComment = txtAdminComment.Text.Trim();
             int templateId = int.Parse(this.ddlTemplate.SelectedItem.Value);
             bool showOnHomePage = cbShowOnHomePage.Checked;
+            bool isbestseller = cbIsbestseller.Checked;
             bool allowCustomerReviews = cbAllowCustomerReviews.Checked;
             bool allowCustomerRatings = cbAllowCustomerRatings.Checked;
             bool published = cbPublished.Checked;
@@ -306,7 +309,10 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 AllowCustomerRatings = allowCustomerRatings,
                 Published = published,
                 CreatedOn = nowDT,
-                UpdatedOn = nowDT
+                UpdatedOn = nowDT,
+                History = history,
+                ShippingAndTerms =  shippingandterm,
+                IsbestSeller = isbestseller
             };
 
             this.ProductService.InsertProduct(product);
@@ -416,13 +422,16 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                     var txtLocalizedName = (TextBox)item.FindControl("txtLocalizedName");
                     var txtLocalizedShortDescription = (TextBox)item.FindControl("txtLocalizedShortDescription");
                     var txtLocalizedFullDescription = (FCKeditor)item.FindControl("txtLocalizedFullDescription");
+                    var txtLocalizedHistory = (FCKeditor)item.FindControl("txtLocalizedHistory");
+                    var txtLocalizedShippingAndTerms = (FCKeditor)item.FindControl("txtLocalizedShippingAndTerm");
                     var lblLanguageId = (Label)item.FindControl("lblLanguageId");
 
                     int languageId = int.Parse(lblLanguageId.Text);
                     string name = txtLocalizedName.Text;
                     string shortDescription = txtLocalizedShortDescription.Text;
                     string fullDescription = txtLocalizedFullDescription.Value;
-
+                    string history = txtLocalizedHistory.Value;
+                    string shippingandterm = txtLocalizedShippingAndTerms.Value;
                     bool allFieldsAreEmpty = (string.IsNullOrEmpty(name) &&
                         string.IsNullOrEmpty(shortDescription) &&
                         string.IsNullOrEmpty(fullDescription));
@@ -439,7 +448,9 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                                 LanguageId = languageId,
                                 Name = name,
                                 ShortDescription = shortDescription,
-                                FullDescription = fullDescription
+                                FullDescription = fullDescription,
+                                History = history,
+                                ShippingAndTerms = shippingandterm
                             };
                             this.ProductService.InsertProductLocalized(content);
                         }
@@ -452,6 +463,8 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                             content.Name = name;
                             content.ShortDescription = shortDescription;
                             content.FullDescription = fullDescription;
+                            content.History = history;
+                            content.ShippingAndTerms = shippingandterm;
                             this.ProductService.UpdateProductLocalized(content);
                         }
                     }
@@ -466,6 +479,8 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                 var txtLocalizedName = (TextBox)e.Item.FindControl("txtLocalizedName");
                 var txtLocalizedShortDescription = (TextBox)e.Item.FindControl("txtLocalizedShortDescription");
                 var txtLocalizedFullDescription = (FCKeditor)e.Item.FindControl("txtLocalizedFullDescription");
+                var txtLocalizedHistory = (FCKeditor)e.Item.FindControl("txtLocalizedHistory");
+                var txtLocalizedShippingAndTerms = (FCKeditor)e.Item.FindControl("txtLocalizedShippingAndTerm");
                 var lblLanguageId = (Label)e.Item.FindControl("lblLanguageId");
 
                 int languageId = int.Parse(lblLanguageId.Text);
@@ -476,6 +491,8 @@ namespace NopSolutions.NopCommerce.Web.Administration.Modules
                     txtLocalizedName.Text = content.Name;
                     txtLocalizedShortDescription.Text = content.ShortDescription;
                     txtLocalizedFullDescription.Value = content.FullDescription;
+                    txtLocalizedHistory.Value = content.History;
+                    txtLocalizedShippingAndTerms.Value = content.ShippingAndTerms;
                 }
             }
         }

@@ -58,6 +58,15 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products {
         protected global::System.Web.UI.WebControls.ListView lvProductPictures;
         
         /// <summary>
+        /// ctrlProductShareButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Modules.ProductShareButtonControl ctrlProductShareButton;
+        
+        /// <summary>
         /// lProductName control.
         /// </summary>
         /// <remarks>
@@ -67,13 +76,13 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products {
         protected global::System.Web.UI.WebControls.Literal lProductName;
         
         /// <summary>
-        /// lShortDescription control.
+        /// lblDimensions control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal lShortDescription;
+        protected global::System.Web.UI.WebControls.Label lblDimensions;
         
         /// <summary>
         /// phSKU control.
@@ -92,6 +101,51 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal lSKU;
+        
+        /// <summary>
+        /// phWeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phWeight;
+        
+        /// <summary>
+        /// lWeight control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lWeight;
+        
+        /// <summary>
+        /// phPackageSize control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phPackageSize;
+        
+        /// <summary>
+        /// lPackageSize control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lPackageSize;
+        
+        /// <summary>
+        /// lShortDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal lShortDescription;
         
         /// <summary>
         /// phManufacturerPartNumber control.
@@ -175,6 +229,24 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products {
         protected global::NopSolutions.NopCommerce.Web.Modules.NumericTextBox txtQuantity;
         
         /// <summary>
+        /// pnfreeshipping control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnfreeshipping;
+        
+        /// <summary>
+        /// lblFreeShipping control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFreeShipping;
+        
+        /// <summary>
         /// btnAddToCart control.
         /// </summary>
         /// <remarks>
@@ -247,13 +319,13 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products {
         protected global::NopSolutions.NopCommerce.Web.Modules.ProductAddToCompareList ctrlProductAddToCompareList;
         
         /// <summary>
-        /// ctrlProductShareButton control.
+        /// ctrTopicHomePage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::NopSolutions.NopCommerce.Web.Modules.ProductShareButtonControl ctrlProductShareButton;
+        protected global::NopSolutions.NopCommerce.Web.Modules.TopicHomePage ctrTopicHomePage;
         
         /// <summary>
         /// lblError control.
@@ -299,24 +371,6 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal lFullDescription;
-        
-        /// <summary>
-        /// ctrlProductsAlsoPurchased control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NopSolutions.NopCommerce.Web.Modules.ProductsAlsoPurchasedControl ctrlProductsAlsoPurchased;
-        
-        /// <summary>
-        /// ctrlRelatedProducts control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::NopSolutions.NopCommerce.Web.Modules.RelatedProductsControl ctrlRelatedProducts;
         
         /// <summary>
         /// ProductsTabs control.
@@ -380,5 +434,86 @@ namespace NopSolutions.NopCommerce.Web.Templates.Products {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::NopSolutions.NopCommerce.Web.Modules.ProductTagsControl ctrlProductTags;
+        
+        /// <summary>
+        /// productinfotabs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TabContainer productinfotabs;
+        
+        /// <summary>
+        /// TabPanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TabPanel TabPanel1;
+        
+        /// <summary>
+        /// ltdescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltdescription;
+        
+        /// <summary>
+        /// TabPanel2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TabPanel TabPanel2;
+        
+        /// <summary>
+        /// ltHistory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltHistory;
+        
+        /// <summary>
+        /// TabPanel3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TabPanel TabPanel3;
+        
+        /// <summary>
+        /// ltShippingandterms control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ltShippingandterms;
+        
+        /// <summary>
+        /// ctrlRelatedProducts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Modules.RelatedProductsControl ctrlRelatedProducts;
+        
+        /// <summary>
+        /// ctrlProductsAlsoPurchased control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::NopSolutions.NopCommerce.Web.Modules.ProductsAlsoPurchasedControl ctrlProductsAlsoPurchased;
     }
 }

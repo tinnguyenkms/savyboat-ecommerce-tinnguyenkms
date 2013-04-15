@@ -59,7 +59,8 @@ namespace NopSolutions.NopCommerce.Web.Modules
                 hlProduct.NavigateUrl = productURL;
                 hlProduct.Text = Server.HtmlEncode(product.LocalizedName);
 
-                var picture = product.DefaultPicture;
+                //var picture = product.DefaultPicture;
+                var picture = product.ProductPictures[0].Picture;
                 var pictures = this.PictureService.GetPicturesByProductId(product.ProductId);
                 if (picture != null)
                 {

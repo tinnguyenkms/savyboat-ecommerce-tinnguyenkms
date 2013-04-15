@@ -225,6 +225,26 @@
                         Height="350" Width="800px" />
                 </td>
             </tr>
+             <tr>
+                <td class="adminTitle">
+                    <nopCommerce:ToolTipLabel runat="server" ID="lblHistory" Text="History"
+                        ToolTip="<% $NopResources: Admin.ProductInfo.FullDescription.Tooltip%>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+                </td>
+                <td class="adminData">
+                    <FCKeditorV2:FCKeditor ID="txtHistory" runat="server" AutoDetectLanguage="false"
+                        Height="350" Width="800px" />
+                </td>
+            </tr>
+             <tr>
+                <td class="adminTitle">
+                    <nopCommerce:ToolTipLabel runat="server" ID="lblShippingAndTerms" Text="Shipping And Terms"
+                        ToolTip="<% $NopResources: Admin.ProductInfo.FullDescription.Tooltip%>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+                </td>
+                <td class="adminData">
+                    <FCKeditorV2:FCKeditor ID="txtShippingAndTerms" runat="server" AutoDetectLanguage="false"
+                        Height="350" Width="800px" />
+                </td>
+            </tr>
         </table>
         <%if (this.HasLocalizableContent)
           { %></div>
@@ -265,6 +285,26 @@
                                 Height="350" Width="800px" />
                         </td>
                     </tr>
+                      <tr>
+                        <td class="adminTitle">
+                            <nopCommerce:ToolTipLabel runat="server" ID="lblLocalizedHistory" Text="History"
+                                ToolTip="<% $NopResources: Admin.ProductInfo.FullDescription.Tooltip%>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+                        </td>
+                        <td class="adminData">
+                            <FCKeditorV2:FCKeditor ID="txtLocalizedHistory" runat="server" AutoDetectLanguage="false"
+                                Height="350" Width="800px" />
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class="adminTitle">
+                            <nopCommerce:ToolTipLabel runat="server" ID="lblLocalizedShippingAndTerm" Text="ShippingAndTerm"
+                                ToolTip="<% $NopResources: Admin.ProductInfo.FullDescription.Tooltip%>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+                        </td>
+                        <td class="adminData">
+                            <FCKeditorV2:FCKeditor ID="txtLocalizedShippingAndTerm" runat="server" AutoDetectLanguage="false"
+                                Height="350" Width="800px" />
+                        </td>
+                    </tr>
                 </table>
             </div>
         </ItemTemplate>
@@ -299,6 +339,15 @@
         </td>
         <td class="adminData">
             <asp:CheckBox ID="cbShowOnHomePage" runat="server"></asp:CheckBox>
+        </td>
+    </tr>
+    <tr>
+        <td class="adminTitle">
+            <nopCommerce:ToolTipLabel runat="server" ID="lblIsbestSeller" Text="<% $NopResources:Admin.ProductInfo.IsbestSeller %>"
+                ToolTip="<% $NopResources:Admin.ProductInfo.IsbestSeller.Tooltip %>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+        </td>
+        <td class="adminData">
+            <asp:CheckBox ID="cbIsbestseller" runat="server"></asp:CheckBox>
         </td>
     </tr>
     <tr>

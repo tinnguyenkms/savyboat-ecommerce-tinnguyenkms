@@ -172,6 +172,15 @@
     </tr>
     <tr>
         <td class="adminTitle">
+            <nopCommerce:ToolTipLabel runat="server" ID="lblIsbestSeller" Text="<% $NopResources:Admin.ProductInfo.IsbestSeller %>"
+                ToolTip="<% $NopResources:Admin.ProductInfo.IsbestSeller.Tooltip %>" ToolTipImage="~/Administration/Common/ico-help.gif" />
+        </td>
+        <td class="adminData">
+            <asp:CheckBox ID="cbIsbestseller" runat="server"></asp:CheckBox>
+        </td>
+    </tr>
+    <tr>
+        <td class="adminTitle">
             <nopCommerce:ToolTipLabel runat="server" ID="lblProductPublished" Text="<% $NopResources:Admin.ProductInfo.Published %>"
                 ToolTip="<% $NopResources:Admin.ProductInfo.Published.Tooltip %>" ToolTipImage="~/Administration/Common/ico-help.gif" />
         </td>

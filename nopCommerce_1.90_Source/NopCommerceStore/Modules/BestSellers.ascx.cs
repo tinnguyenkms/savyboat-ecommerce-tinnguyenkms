@@ -19,6 +19,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Text;
+using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
@@ -50,35 +51,40 @@ namespace NopSolutions.NopCommerce.Web.Modules
             if (this.SettingManager.GetSettingValueBoolean("Display.ShowBestsellersOnMainPage"))
             {
                 int number = this.SettingManager.GetSettingValueInteger("Display.ShowBestsellersOnMainPageNumber");
-                var report = this.OrderService.BestSellersReport(365, number, 1);
-                if (report.Count > 0)
+                //var report = this.OrderService.BestSellersReport(365, number, 1);
+                IList<Product> listproduct = this.ProductService.GetAllProducts();
+                var report =  from n in listproduct
+                              where n.IsbestSeller == true
+                              select n;
+                
+                if (report!=null)
                 {
-                    List<Product> productList = new List<Product>();
-                    foreach (BestSellersReportLine line in report)
-                    {
-                        var productVariant = this.ProductService.GetProductVariantById(line.ProductVariantId);
-                        if (productVariant != null)
-                        {
-                            var product = productVariant.Product;
-                            if (product != null)
-                            {
-                                bool contains = false;
-                                foreach (Product p in productList)
-                                {
-                                    if (p.ProductId == product.ProductId)
-                                    {
-                                        contains = true;
-                                        break;
-                                    }
-                                }
-                                if (!contains)
-                                {
-                                    productList.Add(product);
-                                }
-                            }
-                        }
-                    }
-                    dlCatalog.DataSource = productList;
+                    //List<Product> productList = new List<Product>();
+                    //foreach (BestSellersReportLine line in report)
+                    //{
+                    //    var productVariant = this.ProductService.GetProductVariantById(line.ProductVariantId);
+                    //    if (productVariant != null)
+                    //    {
+                    //        var product = productVariant.Product;
+                    //        if (product != null)
+                    //        {
+                    //            bool contains = false;
+                    //            foreach (Product p in productList)
+                    //            {
+                    //                if (p.ProductId == product.ProductId)
+                    //                {
+                    //                    contains = true;
+                    //                    break;
+                    //                }
+                    //            }
+                    //            if (!contains)
+                    //            {
+                    //                productList.Add(product);
+                    //            }
+                    //        }
+                    //    }
+                    //}
+                    dlCatalog.DataSource = report;
                     dlCatalog.DataBind();
                 }
                 else
@@ -117,6 +123,7 @@ namespace NopSolutions.NopCommerce.Web.Modules
                         hlImageLink.NavigateUrl = productURL;
                         hlImageLink.ToolTip = String.Format(GetLocaleResourceString("Media.Product.ImageLinkTitleFormat"), product.LocalizedName);
                         hlImageLink.Text = String.Format(GetLocaleResourceString("Media.Product.ImageAlternateTextFormat"), product.LocalizedName);
+                        if(product.ProductVariants.Count>0)
                         ctrprice.ProductVariantId = product.ProductVariants[0].ProductVariantId;
                     }
 
